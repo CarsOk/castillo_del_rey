@@ -4,7 +4,7 @@
 ![IMAGEN](https://avatars.githubusercontent.com/u/99417095?v=4)
 ## INFORMACION PERSONAL
 
-### Nombre : Adrian elias contreras dickson
+### Nombre : Adrian Elias Contreras Dickson
 ### Edad : 17
 ### Correo : adriancontrerasdickson@gmail.com
 ### Telefono : 3242078697
