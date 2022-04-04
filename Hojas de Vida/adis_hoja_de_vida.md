@@ -1,5 +1,3 @@
-HOJA DE VIDA
-
 <center>
 
 #  HOJA DE VIDA
