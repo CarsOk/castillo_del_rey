@@ -16,7 +16,7 @@ ilustraci%C3%B3n-de-imagen-de-perfil-mujer-vector.jpg?ver=6" width="200" height=
 |DATOS PERSONALES ||
 |----|----| 
 |NOMBRES Y APELLIDOS|Adis Patricia Ortiz Gómez|
-|LUGAR Y FECHA DE NACIMIENTO|Soledad Atlantico, 26-01-2005|
+|LUGAR DE NACIMIENTO|Soledad Atlantico|
 |CEDULA DE CIUDADANIA|1.043.122.335|
 |SEXO|Femenino|
 |ESTADO CIVIL|Soltero|
