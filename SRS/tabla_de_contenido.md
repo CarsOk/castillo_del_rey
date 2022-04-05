@@ -62,18 +62,22 @@
 
 
 
-> **Especificación de Requerimientos**
+> ### **Especificación de Requerimientos**
 
-*1.	Introducción*
+***1.	Introducción***
+
 En el presente documento se expondrá el proyecto SMSE. ‘Software a la medida del sector empresarial’ el cual se desarrollará para la I.E.C.R. “Institución Educativa Castillo del Rey”
 
-*1.1	Propósito*
+***1.1	Propósito***
+
 La meta de este proyecto es el mejoramiento de las condiciones de vida de los empleados de La I.E.C.R “Institución Educativa Castillo del Rey” al tener organizada la información y así disminuir el tiempo implementado en el trabajo al poseer más accesibilidad y llevar de una manera ordenada la información relevante de la Institución.
 
-*1.2	Alcance* 
+***1.2	Alcance***
+
 El alcance de este proyecto, consta con 6 fases las cuales son, Análisis, Desarrollo, Diseño, Etapa práctica, Identificación e Implantación. En la cual nos comprometemos a realizar 5, tales como: Análisis, Desarrollo, Diseño y Etapa práctica.
 
-*1.3	Definiciones, Acrónimos, y Abreviaturas*
+***1.3	Definiciones, Acrónimos, y Abreviaturas***
 
 •	SMSE – Software a la medida del Sector Empresarial
+
 •	I.E.C.R – Institución Educativa Castillo del Rey
