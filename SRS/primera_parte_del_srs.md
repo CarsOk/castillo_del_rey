@@ -11,10 +11,10 @@
                                                      SENA
 <center>
 
- > ## **Tabla de Contenido**
+ > ## ***Tabla de Contenido***
 </center>
 
-**1.	Introducción**
+### **1.	Introducción**
 
 1.1	Propósito	                            
 
@@ -26,7 +26,7 @@
 
 1.5	Apreciación Global	                    
 
-**2.	Descripción General**	
+### **2.	Descripción General**	
 
 2.1	Perspectivas del Producto	
 
@@ -38,7 +38,7 @@
 
 2.5	Atención y Dependencias	
 
-**3.	Requerimientos Específicos**	
+### **3.	Requerimientos Específicos**	
 
 3.1	Requerimientos Funcionales	
 
@@ -46,7 +46,7 @@
 
 3.3	Requerimientos de interfaz de usuario	
 
-**4.  Determinación de las tecnologías de hardware, software y servicios requerido**	
+### **4.  Determinación de las tecnologías de hardware, software y servicios requerido**	
 
 4.1	Software	
 
