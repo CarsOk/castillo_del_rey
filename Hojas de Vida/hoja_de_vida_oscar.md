@@ -1,5 +1,5 @@
 # HOJA DE VIDA
-
+![imagen](https://avatars.githubusercontent.com/u/99421143?s=400&u=ae7d8063959a33f8cf62cca42a9f7fefd1d90e5a&v=4)
 ## Nombre : Oscar Escorcia
 ## Edad : 17 años
 ## Correo : Oscarescorciapalencia@gmail.com
