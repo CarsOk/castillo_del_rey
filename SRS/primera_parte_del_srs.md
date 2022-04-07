@@ -5,10 +5,9 @@
 
 </center>
 
-
-              SOFTWARE A LA MEDIDA DEL SECTOR EMPRESARIAL
-
-                                                     SENA
+  
+                                                                          SOFTWARE A LA MEDIDA DEL SECTOR EMPRESARIA
+                                                                                                                SENA
 <center>
 
  > ## ***Tabla de Contenido***
