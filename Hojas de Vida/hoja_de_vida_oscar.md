@@ -11,6 +11,6 @@ Curse primaria en el colegio instituto olguita, y 6° a 11° en minuto de DIOS,"
 ## Corporacion
 Me encuentro realizando un tecnologo en el sena de aviacion en analisis y programacion de sistemas de informacion.
 ## Referencias familiares 
-madre : Ana Palencia.
-padre : Oscar Escorcia.
-hermanas : jenys Palencia y Jezuris Escorcia.
+Madre : Ana Palencia.
+Padre : Oscar Escorcia.
+Hermanas : jenys Palencia y Jezuris Escorcia.
