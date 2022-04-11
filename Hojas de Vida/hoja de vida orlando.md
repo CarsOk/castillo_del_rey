@@ -20,7 +20,7 @@
 
 **correo electronico:** orlandojulio76@gmail.com
 
-*** Estado Civil:** Soltero  
+**Estado Civil:** Soltero  
 
 
 ***Estudios:*** primaria, secundaria y un curso basico de sistema  
