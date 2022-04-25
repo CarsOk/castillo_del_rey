@@ -19,14 +19,14 @@ ACTA 04
 
 **AUSENTES:** Alfredo Escalante
 
-**ORDEN DEL DIA**
+> **ORDEN DEL DIA**
 
 Saludo de Bienvenida
 1.	Presentación del Proyecto Formativo del grupo 4
 2.	Requerimientos Funcionales, que se realizará en el proyecto
 3.	Cierre de Reunión
 
-**DESARROLLO**
+> **DESARROLLO**
 
 1.	Se presento el proyecto formativo al Instructor Zahedys Rodriguez
 2.	Los requerimientos Funcionales presentados fueron:
@@ -38,3 +38,26 @@ Nombre del proyecto: Análisis, diseño construcción de un aplicativo web, para
 
 Se da por terminada la reunión siendo las 11:30 p.m. Para constancia, firma de las personas intervinientes.
 
+_____________________________          
+Zahedys Rodriguez                         
+Instructor SENA                        
+
+
+_____________________________
+Adis Ortiz                        
+Aprendiz SENA  
+
+
+_____________________________          
+Oscar Escorcia                       
+Aprendiz SENA                        
+
+
+_____________________________               
+Orlando Julio                    
+Aprendiz SENA 
+
+
+_____________________________               
+Adrian Contreras                       
+Aprendiz SENA 
