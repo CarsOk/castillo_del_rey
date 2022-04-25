@@ -27,7 +27,8 @@ Saludo de Bienvenida
 2.	Sprint review 
 3.	Cierre de Reunión
 
-DESARROLLO
+> DESARROLLO
+
 1.	El Aprendiz Adrián Contreras le presento el Acta N°2 al Instructor Zahedys
 2.	Sprint review, presentado por el Instructor Henry Guzmán. 
 El instructor nos recordó acerca del product backlog, que en este caso nosotros cumplimos ese rol. - Debemos realizar el sprint backlog, el cual se lleva a cabo por medio de la reunión de planeación los días lunes. 
