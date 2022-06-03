@@ -36,7 +36,7 @@ insert into datos_alum value(4, 1043221556, '
 
 select * from datos_alum;
 
-> repetir la iinfromacion
+> repetir la infromacion
  insert into datos_alum value(4, 1043221556, 'CAMILO DAVID',
   'CORTEZ GARCIA', 3, 
   'CALLE 23 #58 345',3098789345, 
