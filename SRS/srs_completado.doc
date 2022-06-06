@@ -1,7 +1,26 @@
-<center>
-Especificación de Requerimientos del Software
-Software Requirement Specification (SRS)
-</center>
+
+> # ***Especificación de Requerimientos del Software***
+> ### ***Software Requirement Specification (SRS)***
+  
+
+                            Análisis, Diseño, Construcción e implementación de un aplicativo web, para el manejo y control de la información estudiantil de la Institución Educativa Castillo del Rey
+
+
+                                      SENA
+
+                               Versión 1.0.3         
+
+
+
+
+
+### **Historial de Revisión**
+|Fecha|Version|Descripción|Autor|
+|-------|-------|-------|-------|
+|25-04-2022|1.0.0|Elaboración del documento|Adis Ortiz, Adrián Contreras, Orlando Julio, Oscar Escorcia|
+|29/04/2022|1.0.1|Realización de los requerimientos funcionales, no funcionales Y adelanto de los requerimientos de interfaz de usuario.|Adis Ortiz, Adrián Contreras, Orlando Julio|
+|18/05/2022|1.0.2|Finalización de los requerimientos de interfaz de usuario |Adis Ortiz|
+|25/05/2022|1.0.3|Arreglo y realización de nuevos requerimientos funcionales |Orlando Julio Y Adis Ortiz|
 
 
 
