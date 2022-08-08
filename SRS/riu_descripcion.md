@@ -22,8 +22,3 @@ Al selecionar la opción de boletines, se mostrarán varias opciones a llenar, c
 
 En está interfaz se mostrará el boletin ya realizado con toda la información correspondiente. Tendrá el nombre de la institución, el logo, el nombre del colegio con quien tiene convenio, la licencia de funcionamiento, el código del DANE, el nombre completo del estudiante, el grado, jornada, periodo, año, las areas o asignaturas que le corresponden al estudiante, los logros del periodo y su nota definitiva de cada asignatura.
 
-> RIU N°7 MENÚ PRINCIPAL DEL ESTUDIANTE
-
-
-> RIU N°
-> RIU N°
