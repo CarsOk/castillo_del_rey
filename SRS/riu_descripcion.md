@@ -22,3 +22,44 @@ Al selecionar la opción de boletines, se mostrarán varias opciones a llenar, c
 
 En está interfaz se mostrará el boletin ya realizado con toda la información correspondiente. Tendrá el nombre de la institución, el logo, el nombre del colegio con quien tiene convenio, la licencia de funcionamiento, el código del DANE, el nombre completo del estudiante, el grado, jornada, periodo, año, las areas o asignaturas que le corresponden al estudiante, los logros del periodo y su nota definitiva de cada asignatura.
 
+> RIU N°7 VISUALIZACIÓN DE NOTAS
+
+En esta interfaz los estudiantes tendrán la opción  de escoger el periodo en el que deseen ver las asignaturas, seleccionar todas las asignaturas o escoger una materia en especifico
+
+> RIU N°8 MENÚ PRINCIPAL DEL ADMIN
+
+En está interfaz aparecerán tres opciones, tales como: gestion de usuario, pagos de mensualidad y asociaciones.
+
+> RIU N°9 GESTIÓN DE USUARIO
+
+Está interfaz aparecerá al seleccionar gestión de usuarios, en el menú del administrador, y tendrá dos opciones, las cuales serán: crear usuario y buscar_editar_o_eliminar_Usuario.
+
+> RIU N°10 CREAR USUARIO
+
+Al seleccionar CREAR USUARIO, aparecerá una opción de seleccionar rol, dependiendo el rol que se escoja, ya sea alumno o docente, se mostrará la información a llenar para ese usuario. Ejemplo:
+Nombre 1, Nombre 2, Apellido 1, Apellido 2, Tipo de documento, Numero de documento, etc.
+
+> RIU N°11 BUCAR_EDITAR_O_ELIMINAR_USUARIO
+
+Está interfaz aparecerá al selecionar en GESTION DE USUARIO, Bucar_Editar_o_Eliminar_Usuario. 
+Estará la opción de seleccionar el rol, y el usuario que se desee buscar, al llenar está información, se mostrá todos los datos con los que se registrarón, al lado derecho habrán 3 punto, los cuales tienen la opción de eliminar o editar usuario, si se escoge el eliminar, se enviará un mensaje ("Esta seguro que desea eliminar este usuario" ¿SI o NO?) y si se escoge el de editar usuario, se habilitarán los datos que estan ahi, para que puedan ser modificados
+
+> RIU N°12 PAGOS DE MENSUALIDAD
+
+Está interfaz aparecerá, al seleccionar en el menú del admin, la opción PAGOS DE MENSUALIDAD. Se seleccionará el grado al que el alumno corresponde, y nombre del alumno, al llenar está información se mostrarán los datos, tales como: 
+- Nombres
+- Apellidos
+- Número de documento 
+- Grado 
+
+Y se llenarán: 
+El mes que se desea pagar, la fecha en que pagó, el periodo en el que se encuentrá el alumno, y el valor a cancelar. En está misma interfaz se puede editar dicha información.
+
+> RIU N°13 ASOCIACIONES
+
+Está interfaz se mostrará, al seleccionar en el menú del admin,ASOCIACIONES.
+Aparecerán cuatro opciones, como: 
+- Asociaciones profesor a asignaturas
+- Asociaciones asignaturas a grados
+- Asociaciones de alumnos a grados
+- Editar asociación profesores a asignaturas
