@@ -1,489 +1,76 @@
-mysql -u root -p
 
-create database c_rey;
-use c_rey;
-
-create table TIPO_D_I(
-    cod_tipo_doc varchar(7),
-    tipo_documento varchar(25),
-    primary key(cod_tipo_doc));
-
-create table SEXO(
-    cod_sexo varchar(1),
-    sexo varchar(9),
-    primary key(cod_sexo));
-
-create table EPS(
-    cod_eps integer,
-    eps varchar(35),
-    primary key(cod_eps));
-
-create table PARENTESCO(
-    cod_parentesco integer,
-    parentesco varchar(10),
-    primary key(cod_parentesco));
-
-create table PERIODO(
-    cod_periodo integer,
-    periodo varchar(15),
-    fecha_inicio DATE,
-    fecha_final DATE,
-    primary key(cod_periodo));
-
-create table DOCENTES(
-    cod_docente integer,
-    tipo_documento varchar(7),
-    num_documento integer,
-    nombres varchar(20),
-    apellidos varchar(20),
-    edad integer,
-    sexo varchar(1),
-    telefono integer,
-    direccion varchar(22),
-    lugar_nacimiento varchar(15),
-    fecha_nacimiento DATE,
-    formacion_academica varchar(100),
-    estado_civil varchar(12),
-    correo varchar(40),
-    primary key(cod_docente),
-    foreign key(tipo_documento) references TIPO_D_I(cod_tipo_doc),
-    foreign key(sexo) references SEXO(cod_sexo));
-
-create table ASIGNATURAS(
-    cod_asig varchar(7),
-    cod_docente integer,
-    nombre varchar(20),
-    descripcion varchar(500),
-    primary key(cod_asig, cod_docente),
-    foreign key(cod_docente) references DOCENTES(cod_docente));
+create database PROYECTO;
+use proyecto;
 
 create table GRADOS(
     cod_grado integer,
-    cod_docente integer,
-    cod_asig varchar(7),
     nombre varchar(10),
-    fecha_inicio DATE,
-    fecha_final DATE,
-    primary key(cod_grado, cod_asig),
-    foreign key(cod_docente) references DOCENTES(cod_docente),
-    foreign key(cod_asig) references ASIGNATURAS(cod_asig));
+    fecha_inicio date,
+    fecha_final date,
+    primary key(cod_grado));
 
-create table ALUMNOS(
-    cod_alumno integer,
-    tipo_documento varchar(7),
-    numero_documento integer,
-    cod_grado integer,
-    nombres varchar(20),
-    apellidos varchar(20),
-    edad integer,
-    sexo varchar(1),
-    eps integer,
-    tipo_doc_acud_1 varchar(7),
-    numero_doc_acud_1 integer,
-    nombres_acud_1 varchar(20),
-    apellidos_acud_1 varchar(20), 
-    tel_acud_1 integer,
-    parentesco_acud_1 integer,
-    tipo_doc_acud_2 varchar(7),
-    numero_doc_acud_2 integer,
-    nombres_acud_2 varchar(20),
-    apellidos_acud_2 varchar(20), 
-    tel_acud_2 integer,
-    parentesco_acud_2 integer,
-    direccion varchar(22),
-    primary key(cod_alumno),
-    foreign key(tipo_documento) references TIPO_D_I(cod_tipo_doc),
-    foreign key(tipo_doc_acud_1) references TIPO_D_I(cod_tipo_doc),
-    foreign key(tipo_doc_acud_2) references TIPO_D_I(cod_tipo_doc),
-    foreign key(cod_grado) references GRADOS(cod_grado),
-    foreign key(sexo) references SEXO(cod_sexo),
-    foreign key(eps) references EPS(cod_eps),
-    foreign key(parentesco_acud_1) references PARENTESCO(cod_parentesco),
-    foreign key(parentesco_acud_2) references PARENTESCO(cod_parentesco));
 
-create table ASISTENCIAS(
-    cod_asist integer,
-    cod_alumno integer,
-    cod_docente integer,
-    cod_grado integer,
-    mes varchar(10),
-    fecha DATE,
-    estado varchar(6),
-    primary key(cod_asist, cod_alumno),
-    foreign key(cod_alumno) references ALUMNOS(cod_alumno),
-    foreign key(cod_docente) references DOCENTES(cod_docente),
-    foreign key(cod_grado) references GRADOS(cod_grado));
-
-create table BOLETINES(
-    cod_boletines integer,
-    cod_alumno integer,
-    cod_grado integer,
-    cod_periodo integer,
-    cod_asig varchar(7),
-    nota_defi_asig integer,
-    year date,
-    jornada varchar(7),
-    primary key(cod_boletines),
-    foreign key(cod_alumno) references ALUMNOS(cod_alumno),
-    foreign key(cod_periodo) references PERIODO(cod_periodo),
-    foreign key(cod_grado) references GRADOS(cod_grado),
-    foreign key(cod_asig) references ASIGNATURAS(cod_asig));
-
-create table VER(
-    codigo integer,
-    cod_asig varchar(7),
-    cod_alumno integer,
+create table USUARIOS(
+    Codigo integer,
+    Tipo_de_usuario Varchar(13),
+    Tipo_de_documento Varchar(14),
+    Numero_documento integer,
+    Usuario varchar(30);
+    Contrasenia varchar(20),
+    Nombre 1 Varchar(20),
+    Nombre 2 Varchar(20),
+    Apellido 1 varchar(20),
+    Apellido 2 varchar(20),
+    Edad integer,
+    Sexo Varchar(1),
+    Lugar_nacimiento varchar(15),
+    Fecha_nacimiento date,
+    Telefono integer,
+    Direccion varchar(22),
+    Seguridad_social varchar(20),
+    Correo varchar(40),
+    Formacion_academica varchar(20),
+    codigo_grado integer,
     primary key(codigo),
-    foreign key(cod_asig) references ASIGNATURAS(cod_asig),
-    foreign key(cod_alumno) references ALUMNOS(cod_alumno));
+    foreign key(codigo_grado) references grados(cod_grados));
 
-create table NOTAS(
-    cod_notas integer,
-    cod_alumno integer,
-    valor integer,
-    descripcion varchar(100),
-    cod_asig varchar(7),
-    cod_grado integer,
-    cod_periodo integer,
-    fecha DATE,
-    primary key(cod_notas),
-    foreign key(cod_alumno) references ALUMNOS(cod_alumno),
-    foreign key(cod_asig) references ASIGNATURAS(cod_asig),
-    foreign key(cod_grado) references GRADOS(cod_grado),
-    foreign key(cod_periodo) references PERIODO(cod_periodo));
+    create table ASIGNATURAS(
+        cod_asig varchar(7),
+        usuario_docente integer,
+        nombre varchar(20),
+        primary key(cod_asig),
+        foreign key(usuario_docente) references usuario(codigo));
+
+    create table ASIGNATURAS_ALUMNOS(
+        codigo integer,
+        cod_asig varchar(7),
+        usuario_alumno integer,
+        primary key(codigo),
+        foreign key(cod_asig) references ASIGNATURAS(cod_asig),
+        foreign key(usuario_alumno) references usuario(codigo));
+
+    create table ASOCIACION_ASIG_DOCENTES(
+        codigo integer,
+        usuario_docente integer,
+        cod_asig varchar(7),
+        nombre varchar(10),
+        fecha_inicio date,
+        fecha_final date,
+        primary key(codigo),
+        foreign key(usuario_docente) references usuario(codigo),
+        foreign key(cod_asig) references ASIGNATURAS(cod_asig));
+
     
-create table ADMINISTRADOR(
-    cod_admin integer,
-    tipo_documento varchar(2),
-    numero_documento integer,
-    nombres varchar(20),
-    apellidos varchar(20),
-    telefono integer,
-    direccion varchar(22),
-    sexo varchar(1),
-    edad integer,
-    primary key(cod_admin),
-    foreign key(tipo_documento) references TIPO_D_I(cod_tipo_doc),
-    foreign key(sexo) references SEXO(cod_sexo));
-
-create table PAGO(
-    cod_pago integer,
-    cod_alumno integer,
-    cod_admin integer,
-    cod_grado integer,
-    fecha_cancelar DATE,
-    mes_cancelar DATE,
-    primary key(cod_pago),
-    foreign key(cod_alumno) references ALUMNOS(cod_alumno),
-    foreign key(cod_admin) references ADMINISTRADOR(cod_admin),
-    foreign key (cod_grado) references GRADOS(cod_grado));
-
-
-insert into PARENTESCO values(1,"PADRE");
-insert into PARENTESCO VALUES(2,"MADRE");
-insert into PARENTESCO values(3,"MADRASTRA");
-INSERT INTO PARENTESCO VALUES(4, "PADRASTRO");
-insert into parentesco values(5,"TIO");
-INSERT INTO PARENTESCO VALUES(6, "TIA");
-INSERT INTO PARENTESCO VALUES(7, "PRIMA");
-INSERT INTO PARENTESCO VALUES(8,"PRIMO");
-INSERT INTO PARENTESCO VALUES(9,"ABUELA");
-INSERT INTO PARENTESCO VALUES(10,"ABUELO");
-INSERT INTO PARENTESCO VALUES(11,"OTRO");
-
-
-insert into eps values(1, "SALUD COLMENAS E.P.S. S.A.");
-INSERT INTO EPS VALUES(2, "SALUD TOTAL S.A. E.P.S.");
-INSERT INTO EPS VALUES(3,"CAFESALUD E.P.S. S.A");
-INSERT INTO EPS VALUES(4, "E.P.S. SANITAS S.A");
-
-
-INSERT INTO TIPO_D_I VALUES("TI","TARJETA DE IDENTIDAD");
-INSERT INTO TIPO_D_I VALUES("CC","CEDULA DE CIUDADANIA");
-INSERT INTO TIPO_D_I VALUES("CE","CEDULA EXTRANJERA");
-INSERT INTO TIPO_D_I VALUES("SIN TI","SIN TARJETA DE IDENTIDAD");
-
-INSERT INTO SEXO VALUES("F","FEMENINO");
-INSERT INTO SEXO VALUES("M","MASCULINO");
-INSERT INTO SEXO VALUES("O","OTRO");
-
-insert into DOCENTES values(
-    1, "CC", 1890273, 
-    "CARMEN CECILIA", "LOPEZ PINEDO", 27, 
-    "F", 3003928970, "CALLE 98 #51B - 15", 
-    "SOLEDAD", "1995-08-26", "PEDAGOGIA INFANTIL", 
-    "CASADA", "carmencecilopez@gmail.com");
-
-insert into DOCENTES values(
-    2, "CC", 7238909, "NELLY MARIA",
-    "YIME CORRO", 33, "F", 
-    3014567890, "KRA 28# 72 - 345", "BARRANQUILLA", 
-    "1989-05-22", "PSICOLOGA - PEDAGOGIA INFANTIL",
-    "SOLTERA", "nyimec@outlook.es"); 
-
-
-insert into periodo values(1, "PRIMER_PERIODO", 2022-02-01, 2022-04-15);
-insert into periodo values(2, "SEGUNDO_PERIODO", 2022-04-18, 2022-06-17);
-insert into periodo values(3, "TERCER_PERIODO", 2022-07-11, 2022-09-16);
-insert into periodo values(4, "CUARTO_PERIODO", 2022-09-19, 2022-11-18);
-
-
-insert into ASIGNATURAS values("ART", 1, "ARTISTICA",
-"La educacion artistica apunta a que el alumno aprenda a expresarse a traves del arte.");
-
-insert into ASIGNATURAS values("COM_LEC", 1, "COMPRENSION LECTORA",
-"Desarrollar en el estudiante la capacidad comprensiva de textos diversos, tecnicos y 
-cientificos asi como su habilidad de comunicacion escrita y oral con la finalidad de 
-incentivar la participacion colaborativa y su desarrollo intelectual.");
-
-insert into ASIGNATURAS values("ED_CRI", 1, "EDUCACION CRISTIANA",
-"Aprender sobre DIOS");
-
-insert into ASIGNATURAS values("ED_FI", 1, "EDUCACION FISICA",
-"Es una disciplina que trata de ofrecer una educaciOn integral sobre el cuerpo humano
- contribuyendo al cuidado de la salud. Con la materia de educaciOn fIsica se busca educar 
- a los individuos en el uso de su propio cuerpo, ensenandoles a mantener su salud fisica y 
- corporal.");
-
-insert into ASIGNATURAS values("ESP", 1, "LENGUAJE",
-"El objetivo principal es que los estudiantes adquieran destrezas en compresion y 
-expresion oral y escrita y desarrollen la competencia comunicativa desde algunas de sus
- vertientes como pueden ser la pragmatica, la linguistica o la sociolinguistica entre otras.");
-
-insert into ASIGNATURAS values("ING", 1, "INGLES",
-"Valorar la lengua extranjera, y las lenguas en general, como medio de comunicacion
- y entendimiento entre personas de procedencias y culturas diversas y como herramienta 
- de aprendizaje de distintos contenidos");
-
-insert into ASIGNATURAS values("INT", 1, "INTEGRADA", "................");
-insert into ASIGNATURAS values("MAT", 1, "MATEMATICA", "................");
-
-insert into ASIGNATURAS values("ART", 2, "ARTISTICA",
-"La educacion artistica apunta a que el alumno aprenda a expresarse a traves del arte.");
-
-insert into ASIGNATURAS values("CI_NA", 2, "CIENCIAS NATURALES",
-"Las ciencias naturales buscan entender el funcionamiento del universo y el mundo que nos rodea");
-
-insert into ASIGNATURAS values("COM_LEC", 2, "COMPRENSION LECTORA",
-"Desarrollar en el estudiante la capacidad comprensiva de textos diversos, tecnicos y 
-cientificos asi como su habilidad de comunicacion escrita y oral con la finalidad de 
-incentivar la participacion colaborativa y su desarrollo intelectual.");
-
-insert into ASIGNATURAS values("ED_CRI", 2, "EDUCACION CRISTIANA",
-"Aprender sobre DIOS");
-
-insert into ASIGNATURAS values("ED_FI", 2, "EDUCACION FISICA",
-"Es una disciplina que trata de ofrecer una educaciOn integral sobre el cuerpo humano
- contribuyendo al cuidado de la salud. Con la materia de educaciOn fIsica se busca educar 
- a los individuos en el uso de su propio cuerpo, ensenandoles a mantener su salud fisica y 
- corporal.");
-
-insert into ASIGNATURAS values("ESP", 2, "LENGUAJE",
-"El objetivo principal es que los estudiantes adquieran destrezas en compresion y 
-expresion oral y escrita y desarrollen la competencia comunicativa desde algunas de sus
- vertientes como pueden ser la pragmatica, la linguistica o la sociolinguistica entre otras.");
-
-insert into ASIGNATURAS values("INF", 2, "INFORMATICA",
-"El alumno sera capaz de utilizar lenguajes de programacion con los que desarrollar aplicaciones 
-de proposito general. Tambien se proporciona al alumno conocimientos basicos sobre las partes 
-que constituyen un sistema informatico y sobre el funcionamiento de los sistemas operativos.");
-
-insert into ASIGNATURAS values("ING", 2, "INGLES",
-"Valorar la lengua extranjera, y las lenguas en general, como medio de comunicacion
- y entendimiento entre personas de procedencias y culturas diversas y como herramienta 
- de aprendizaje de distintos contenidos");
-
-insert into ASIGNATURAS values("INT", 2, "INTEGRADA", "................");
-insert into ASIGNATURAS values("MAT", 2, "MATEMATICA", "................");
-insert into ASIGNATURAS values("SOC", 2, "SOCIALES", ".................");
-
-
-insert into GRADOS VALUES(
-    1, 1, "ART", "PRE_JARDIN", 2022-02-02, 2022-11-18);
+    create table ASISTENCIAS(
+        cod_asist integer,
+        usuario_alumno integer,
+        usuario_docente integer,
+        cod_grado integer,
+        mes varchar(10),
+        fecha date,
+        estado varchar(6),
+        primary key(cod_asist),
+        foreign key(usuario_alumno) references usuario(codigo),
+        foreign key(usuario_docente) references usuario(codigo),
+        foreign key(cod_grado) references grado(cod_grado));
     
-insert into GRADOS VALUES(
-    1, 1, "COM_LEC", "PRE_JARDIN",  2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    1, 1, "ED_CRI", "PRE_JARDIN", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    1, 1, "ED_FI", "PRE_JARDIN", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    1, 1, "ESP", "PRE_JARDIN", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    1, 1, "ING", "PRE_JARDIN", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    1, 1, "INT", "PRE_JARDIN", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    1, 1, "MAT", "PRE_JARDIN", 2022-02-02, 2022-11-18);
-
-
-
-insert into GRADOS VALUES(
-    2, 1, "ART", "JARDIN", 2022-02-02, 2022-11-18);
-    
-insert into GRADOS VALUES(
-    2, 1, "COM_LEC", "JARDIN", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    2, 1, "ED_CRI", "JARDIN", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    2, 1, "ED_FI", "JARDIN", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    2, 1, "ESP", "JARDIN", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    2, 1, "ING", "JARDIN", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    2, 1, "INT", "JARDIN", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    2, 1, "MAT", "JARDIN", 2022-02-02, 2022-11-18);
-
-
-
-insert into GRADOS VALUES(
-    3, 2, "ART", "TRANSICION", 2022-02-02, 2022-11-18);
-    
-insert into GRADOS VALUES(
-    3, 2, "COM_LEC", "TRANSICION", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    3, 2, "ED_CRI", "TRANSICION", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    3, 2, "ED_FI", "TRANSICION", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    3, 2, "ESP", "TRANSICION", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    3, 2, "ING", "TRANSICION", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    3, 2, "INT", "TRANSICION", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    3, 2, "MAT", "TRANSICION", 2022-02-02, 2022-11-18);
-
-
-
-insert into GRADOS VALUES(
-    4, 2, "ART", "PRIMERO", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    4, 2, "CI_NA", "PRIMERO", 2022-02-02, 2022-11-18);
-    
-insert into GRADOS VALUES(
-    4, 2, "COM_LEC", "PRIMERO", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    4, 2, "ED_CRI", "PRIMERO", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    4, 2, "ED_FI", "PRIMERO", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    4, 2, "ESP", "PRIMERO", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    4, 2, "INF", "PRIMERO", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    4, 2, "ING", "PRIMERO", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    4, 2, "MAT", "PRIMERO", 2022-02-02, 2022-11-18);
-
-insert into GRADOS VALUES(
-    4, 2, "SOC", "PRIMERO", 2022-02-02, 2022-11-18);
-
-
-insert into alumnos values(
-    1, "TI", 1043199455, 4, "PATRICIA", 
-    "HERREA HOYOS", 7, "F", 2, "CC",
-    7238890, "JUDITH", "VENERA ZAPATA",
-    3245567898, 2, "CC", 8987651, 
-    "JUAN CARLOS", "HERRERA PATINO",
-    3125567543, 1, "DIAGONAL 79B #7D-45");
-
-insert into alumnos values(
-    2, "SIN TI", 1001891400, 1, "ANDREA MELISSA", 
-    "PEREZ MALDONADO", 5, "F", 3, "CE",
-    7896565, "MARIA CARMENSA", "ROSADO JINETE",
-    3214567890, 9, "CC", 8955372, 
-    "FERNANDO JAVIER", "PEREZ PEREZ",
-    3214563209, 5, "KRA 28 #53 - 456");
-
-
-INSERT INTO notas values(
-    1, 2, 5, "........", "ART",
-    1, 1, 2022-03-15);
-
-INSERT INTO NOTAS VALUES(
-    2, 2, 4.6, "........", "CI_NA",
-    1, 1, 2022-03-16);
-
-INSERT INTO NOTAS VALUES(
-    3, 2, 4, "........", "COM_LEC",
-    1, 1, 2022-03-17);
-
-INSERT INTO NOTAS VALUES(
-    4, 1, 4.4 , "........", "ED_CRI",
-    4, 1, 2022-03-18);
-
-INSERT INTO NOTAS VALUES(
-    5, 1, 5 , "........", "ED_FI",
-    4, 1, 2022-03-19);
-
-INSERT INTO NOTAS VALUES(
-    6, 1, 3.9 , "........", "ESP",
-    4, 1, 2022-03-20);
-
-
-INSERT INTO ADMINISTRADOR VALUES(
-    1,"CC",76543572,"ANA LUCILA", "MORA BELTRAN",
-    76543572, "KRA 21 #28 - 40", "F", 40);
-
-
-insert into asistencias values(
-    1, 2, 1, 1, "JUNIO", 2022-06-13, "ACTIVO");
-
-insert into asistencias values(
-    2, 2, 1, 1, "JUNIO", 2022-06-14, "");
-
-insert into asistencias values(
-    3, 1, 2, 4, "JUNIO", 2022-06-15, "");
-
-insert into asistencias values(
-    4, 1, 2, 4, "JUNIO", 2022-06-16, "ACTIVO");
-
-
-insert into boletines values(
-    1, 1, 4, 1, "ART", 3.4, 2022,
-    "DIURNA");
-
-insert into boletines values(
-    2, 2, 1, 1, "SOC", 4.4, 2022,
-    "DIURNA");
-
-
-INSERT INTO PAGO VALUES(
-    001, 1, 1, 4, 2022-05-15, 2022-05-22);
-
-INSERT INTO PAGO VALUES(
-    002, 1, 1, 4, 2022-06-28, 2022-06-28);
-
-INSERT INTO PAGO VALUES(
-    003, 1, 1, 4, 2022-06-20, 2022-07-22);
-
-INSERT INTO PAGO VALUES(
-    004, 2, 1, 1, 2022-06-28, 2022-07-22);
