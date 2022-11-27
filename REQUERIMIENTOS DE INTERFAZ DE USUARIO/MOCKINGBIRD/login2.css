@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-realista-regreso-escuela-papeleria-colorida-sobre-superficie-madera_1284-55358.jpg?w=2000);
+}
+.registro{
+    width: 700px;
+    background: white; 
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border:1px solid #1f53c5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+ h4 {
+    font-size: 55px;
+    padding-inline-end: 200%;
+    text-align: bottom;
+    color: black
+    
+}
+.controls{
+    width: 50%;
+    padding-top: 100%;
+    background: #24303c; 
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border:1px solid #1f53c5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.registro .botons{
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px  0;
+    font-size: 16px;
+
+}
+image{
+    padding: 5px; 
+    padding-right: 15px;
+    padding-top: 0%;
+    float: right; 
+    width: 110px; 
+    height: 150px;
+}
+form{
+    width: 700px;
+    background: white; 
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border:1px solid #1f53c5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
