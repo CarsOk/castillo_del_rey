@@ -36,15 +36,17 @@
                 <br><br>
 
                 <div class="col">
-                    <div class="row">
-                        <div class="col">
-                            <input type="text" placeholder=" Buscar" class="form-control" id="caja_txt">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" placeholder=" Buscar" class="form-control" id="caja_txt">
+                            </div>
+                            
+                            <div class="col-4">
+                                <button type="submit" value="  BUSCAR  " class="btn" id="btn_txt">BUSCAR</button>
+                            </div>
                         </div>
-                        
-                        <div class="col-4">
-                            <input type="button" value="  BUSCAR  " class="btn" id="btn_txt">
-                        </div>
-                    </div>
+                    </form>
                 </div>
                 
                 <div class="col"></div>
@@ -52,8 +54,10 @@
                 <div class="col">
                     <div class="row">
                         <div class="col">
-                            <a id="btn_asoc" class="btn btn-outline-light " name="asociacion">Asociación Asignaturas_Grados</a>
+                            <a id="btn_asoc" class="btn btn-outline-light" href="asoc_asig_grados.html"target="" name="asoc_asig_grados">Asociación Asignaturas_Grados</a><br/>
                         </div>
+
+                        
                         
                         <div class="col-3">
                             <a class="delete_subray" href="crear_usuario.html" target="">
@@ -73,107 +77,159 @@
             <br>
 
             <div class="row">
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col">CÓDIGO</th>
-                            <th scope="col-2">NÚMERO DE DOCUMENTO</th>
-                            <th scope="col">ROL</th>
-                            <th scope="col-2">NOMBRE COMPLETO</th>
-                            <th scope="col">GRADO</th>
-                            <th scope="col">EDITAR</th>
-                            <th scope="col">PAGO</th>
-                            <th scope="col">ASISTENCIA</th>
-                            <th scope="col">NOTAS</th>
-                            <th scope="col">ASOCIACIÓN</th>
-                    
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <th scope="row">0001</th>
-                            <td>1.043.323.445</td>
-                            <td>ESTUDIANTE</td>
-                            <td>MARIA PAULA HERRERA GÓMEZ</td>
-                            <td>TRANSICIÓN</td>
-
-                            <td>
-                                <a class="delete_subray" href="editar_usuario.html"target="">
-                                    <span class="icon icon-pencil"></span>
-                                </a><br/>
-                            </td>
-
-                            <td>
-                                <a class="delete_subray" href="" target="">
-                                    <span class="icon icon-section"></span>
-                                </a>
-                            </td>
-
-                            <td>
-                                <a class="delete_subray" href="" target="">
-                                    <span class="icon icon-checkbox-checked"></span>
-                                </a>
-                            </td>
-
-                            <td>
-                                <a class="delete_subray" href="" target="">
-                                    <span class="icon icon-text-color"></span>
-                                </a>
-                            </td>
-
-                            <td>
-                                <a class="delete_subray" href="" target="">
-                                    <span class="icon icon-tab"></span>
-                                </a>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">0002</th>
-                            <td></td>
-                            <td></td>
-                            <td</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">0003</th>
-                            <td></td>
-                            <td></td>
-                            <td</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">0003</th>
-                            <td></td>
-                            <td></td>
-                            <td</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-
-                    </tbody>
+                <div class="col-12">
+                    <table id="tabla" class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">CÓDIGO</th>
+                                <th scope="col-2">NÚMERO DE DOCUMENTO</th>
+                                <th scope="col">ROL</th>
+                                <th scope="col-2">NOMBRE COMPLETO</th>
+                                <th scope="col">GRADO</th>
+                                <th scope="col">EDITAR</th>
+                                <th scope="col">PAGO</th>
+                                <th scope="col">ASISTENCIA</th>
+                                <th scope="col">NOTAS</th>
+                                <th scope="col">ASOCIACIÓN</th>
                         
-                </table>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th scope="row">0001</th>
+                                <td>1.043.323.445</td>
+                                <td>ESTUDIANTE</td>
+                                <td>MARIA PAULA HERRERA GÓMEZ</td>
+                                <td>TRANSICIÓN</td>
+
+                                <td>
+                                    <a class="delete_subray" href="editar_usuario.html"target="" name="editar">
+                                        <span class="icon icon-pencil"></span>
+                                    </a><br/>
+                                </td>
+
+                                <td>
+                                    <a class="delete_subray" href="pago_mensualidad.html" target="" name="pago">
+                                        <span class="icon icon-section"></span>
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a class="delete_subray" href="informe_asistencia_admin.html" target="" name="asistencia">
+                                        <span class="icon icon-checkbox-checked"></span>
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a class="delete_subray" href="informe_notas_admin.html" target="" name="notas">
+                                        <span class="icon icon-text-color"></span>
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a class="delete_subray" href="asoc_alumnos_grados.html" target="" name="asociacion">
+                                        <span class="icon icon-tab"></span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">0002</th>
+                                <td>1.003.336.789</td>
+                                <td>ESTUDIANTE</td>
+                                <td>PAULA FERRER JIMENEZ</td>
+                                <td>PRIMERO</td>
+                                <td>
+                                    <a class="delete_subray" href="editar_usuario.html" target="" name="editar">
+                                        <span class="icon icon-pencil"></span>
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a class="delete_subray" href="./pago_mensualidad.html" target="" name="pago">
+                                        <span class="icon icon-section"></span>
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a class="delete_subray" href="informe_asistencia_admin.html" target="" name="asistencia">
+                                        <span class="icon icon-checkbox-checked"></span>
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a class="delete_subray" href="informe_notas_admin.html" target="" name="notas">
+                                        <span class="icon icon-text-color"></span>
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a class="delete_subray" href="asoc_alumnos_grados.html" target="" name="asociacion">
+                                        <span class="icon icon-tab"></span>
+                                    </a>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row">0003</th>
+                                <td></td>
+                                <td></td>
+                                <td</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+
+                            <tr>
+                                <tr>
+                                    <th scope="row">0004</th>
+                                    <td>72.196.118</td>
+                                    <td>DOCENTE</td>
+                                    <td>DANIEL ARAUGO HERNANDEZ</td>
+                                    <td></td>
+                                    <td>
+                                        <a class="delete_subray" href="editar_usuario.html" target="" name="editar">
+                                            <span class="icon icon-pencil"></span>
+                                        </a>
+                                    </td>
+    
+                                    <td></td>
+    
+                                    <td></td>
+    
+                                    <td></td>
+    
+                                    <td>
+                                        <a class="delete_subray" href="asoc_docente_asig.html" target="" name="asociacion">
+                                            <span class="icon icon-tab"></span>
+                                        </a>
+                                    </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">0005</th>
+                                <td></td>
+                                <td></td>
+                                <td</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
         <!--

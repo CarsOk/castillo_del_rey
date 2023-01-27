@@ -1,5 +1,5 @@
 #cont{
-display: contents;
+    display: contents;
 }
 
 header{
@@ -14,7 +14,7 @@ header{
     font-size: 400%;
     display: flex;
     justify-content: end;
-    margin-right: 1%;   ;
+    margin-right: 1%;
 }
 
 #btn_txt{
@@ -22,10 +22,9 @@ header{
     background-color: rgba(255, 251, 0, 0.918);
 }
 
-footer{
-    border: 1px solid rgb(189, 183, 183);
-}
-
-#caneca{
-    font-size: 170%;
+.caja{
+    height: 125%;
+    width: 85%;
+    padding-left: 0%;
+    margin-left: 0%;
 }
