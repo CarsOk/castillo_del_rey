@@ -1,3 +1,5 @@
+//Base de datos del proyecto
+
 create table PERIODO(
     cod_periodo integer PRIMARY KEY AUTO_INCREMENT,
     periodo varchar(10),
@@ -113,3 +115,46 @@ create table pago(
     FOREIGN KEY(usuario_alumno) REFERENCES usuarios(codigo),
     FOREIGN KEY(cod_grado) REFERENCES grados(cod_grado)
 );
+
+//Usuario docente
+insert into usuarios (rol, tipo_documento, num_documento, usuario, contrasena, nombre1, apellido1, apellido2, edad, sexo, lugar_nacimiento, fecha_nacimiento, telefono, direccion, eps, correo, formacion_academica)
+VALUES("DOCENTE", "CC", 72345986, "abcd@efg.com", "abcd", "PATRICIA", "OROZCO", "PEREZ", 32, "F", "BARRANQUILLA", '1990-06-15', 3155008713, "KRA 21 #50 - 33A
+", "SALUD TOTAL", "patriorpe@hotmail.com", "PEDAGOGÍA INFANTIL");
+
+insert into usuarios (rol, tipo_documento, num_documento, usuario, contrasena, nombre1, nombre2, apellido1, apellido2, edad, sexo, lugar_nacimiento, fecha_nacimiento, telefono, direccion, eps, correo, formacion_academica)
+VALUES("DOCENTE", "CC", 32456798, "abcd@efg.com", "efgh", "MARIA", "INES", "FERNANDEZ", "ARAUGO", 26, "F", "SABANALARGA", '1997-02-15', 3004327890, "CALLE 50 #14 - 22A
+", "FAMISANAR LTDA", "laulilo@gmail.com", "PEDAGOGÍA INFANTIL");
+
+insert into usuarios (rol, tipo_documento, num_documento, usuario, contrasena, nombre1, 
+apellido1, apellido2, edad, sexo, lugar_nacimiento, fecha_nacimiento, telefono, direccion, eps, correo, formacion_academica)
+VALUES("DOCENTE", "CC", 72341209, "ijkL@mnñ.com", "ijkl", "LAURA", "LOPEZ", "MARTINEZ", 
+30, "F", "SOLEDAD", '1992-06-15', 3003784563, "CALLE 40 #8 - 3C", "SANITAS S.A", "laulilo@gmail.com", "PSICOLOGÍA - PEDAGOGÍA INFANTIL");
+
+//UPDATE usuarios SET correo = "laulilo@gmail.com" WHERE codigo=2;
+//ALTER TABLE usuarios MODIFY COLUMN formacion_academica varchar(100);
+//alter table usuarios MODIFY COLUMN telefono bigint;
+
+insert into usuarios (rol, tipo_documento, num_documento, usuario, contrasena, nombre1, nombre2, apellido1, apellido2, edad, sexo, 
+lugar_nacimiento, fecha_nacimiento, telefono, direccion, eps, correo, formacion_academica)
+VALUES("DOCENTE", "CC", 34562387, "mnño@pqrs.com", "mñno", "LILY", "LAU", "CAMPO", "FERRER", 28, "F", "SOLEDAD", '1995-04-25', 3005632145, "CALLE 19 #24 - 27D", "SALUD TOTAL", "ferrecampolily@outlook.es", "PEDAGOGÍA INFANTIL");
+
+//Asignaturas
+insert into asignaturas 
+VALUES("ART", "ARTÍSTICA"),
+("CI_NA", "CIENCIAS NATURALES"),
+("COM_LEC", "COMPRENSIÓN LECTORA"),
+("ED_CRI", "EDUCACIÓN CRISTIANA"),
+("ED_FI", "EDUCACIÓN FÍSICA"),
+("ESP", "ESPAÑOL"),
+("INF", "INFORMÁTICA"),
+("ING", "INGLES"),
+("MAT", "MATEMÁTICAS"),
+("SOC", "SOCIALES");
+
+//Grados
+insert into grados
+VALUES(1, 1, "PRE JARDÍN", '2023-02-06', '2023-11-17'),
+(2, 2, "JARDÍN", '2023-02-06', '2023-11-17'),
+(3, 3, "TRANSICIÓN", '2023-02-06', '2023-11-17'),
+(4, 3, "PRIMERO", '2023-02-06', '2023-11-17');
+
