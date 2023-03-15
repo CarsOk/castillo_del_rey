@@ -158,3 +158,12 @@ VALUES(1, 1, "PRE JARDÍN", '2023-02-06', '2023-11-17'),
 (3, 3, "TRANSICIÓN", '2023-02-06', '2023-11-17'),
 (4, 3, "PRIMERO", '2023-02-06', '2023-11-17');
 
+//Alumnos
+insert into usuarios (rol,tipo_documento, num_documento, usuario, contrasena, nombre1, nombre2, apellido1, apellido2, edad, sexo, lugar_nacimiento, fecha_nacimiento, telefono, direccion, eps, cod_grado)
+VALUES("ESTUDIANTE","TI",1043144567,"ab1@gmail.com","ab1", "LAURA","PATRICIA","PATIÑO","MORA",6,"F","SOLEDAD",'2017-01-26',3154988751,"CALLE 15 #21-44B", "SALUD TOTAL", 4),
+
+("ESTUDIANTE","REGISTRO CIVIL",19934553312,"aC1@gmail.com","aC1", "FERNANDO","ENRRIQUE","ROSADO","FERRER",3,"M","SOLEDAD",'2020-03-21',3009872312,"CALLE 20 #22-43C", "SALUD TOTAL", 1),
+
+("ESTUDIANTE","REGISTRO CIVIL",1934897234,"aD1@gmail.com","aD1", "EMILY","","QUINTERO","LOPEZ",4,"F","SABANALARGA",'2018-12-21',3156772345,"DIAG 27C #6A-4", "SANITAS", 2),
+
+("ESTUDIANTE","REGISTRO CIVIL",1045233776,"aE2@gmail.com","aE2", "LIPSY","","MONTERO","VIÑA",5,"F","BARRANQUILLA",'2018-11-01',3218764321,"KRA 1C #45A-4", "MUTUALSER", 3);
