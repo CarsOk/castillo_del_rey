@@ -167,3 +167,54 @@ VALUES("ESTUDIANTE","TI",1043144567,"ab1@gmail.com","ab1", "LAURA","PATRICIA","P
 ("ESTUDIANTE","REGISTRO CIVIL",1934897234,"aD1@gmail.com","aD1", "EMILY","","QUINTERO","LOPEZ",4,"F","SABANALARGA",'2018-12-21',3156772345,"DIAG 27C #6A-4", "SANITAS", 2),
 
 ("ESTUDIANTE","REGISTRO CIVIL",1045233776,"aE2@gmail.com","aE2", "LIPSY","","MONTERO","VIÑA",5,"F","BARRANQUILLA",'2018-11-01',3218764321,"KRA 1C #45A-4", "MUTUALSER", 3);
+
+//Acudientes
+insert into acudientes (tipo_documento, num_documento, nombre1, nombre2, apellido1, apellido2, telefono, parentesco, usuario_alumno)
+VALUES("CC", 32789675, "MARIA", "CONCEPCIÓN", "MORA", "PEREZ", 3154988751, "MADRE", 5),
+("CC", 32895234, "LIDYA", "", "FERRER", "FERRER", 3009872312
+, "MADRE", 6),
+("CC", 72982312, "PEDRO", "LUIS", "QUINTERO", "MONTAÑO", 3156772345
+, "PADRE", 7),
+("CC", 32457654, "LIPSY", "", "MONTERO", "VENERA", 3218764321
+, "MADRE", 8);
+
+//Asignaturas_Alumnos
+//Estan mal
+insert into asignaturas_alumnos 
+VALUES("ART", 5),
+("CI_NA",5),
+("COM_LEC",5),
+("ED_CRI",5),
+("ED_FI",5),
+("ESP",5),
+("INF",5),
+("ING",5),
+("MAT",5),
+("SOC",5),
+
+("ART", 6),
+("COM_LEC",6),
+("ED_CRI",6),
+("ED_FI",6),
+("ESP",6),
+("ING",6),
+("INT",6),
+("MAT",6),
+
+("ART", 7),
+("COM_LEC",7),
+("ED_CRI",7),
+("ED_FI",7),
+("ESP",7),
+("ING",7),
+("INT",7),
+("MAT",7),
+
+("ART", 8),
+("COM_LEC",8),
+("ED_CRI",8),
+("ED_FI",8),
+("ESP",8),
+("ING",8),
+("INT",8),
+("MAT",8);
