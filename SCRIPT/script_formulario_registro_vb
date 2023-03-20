@@ -1,0 +1,62 @@
+Private Sub btnguardar_Click()
+fila = datos.Cells(1, 1)
+datos.Cells(1, 1) = fila + 1
+
+datos.Cells(fila, 1) = txtrol.Text
+datos.Cells(fila, 2) = txtnombres.Text
+datos.Cells(fila, 3) = txtapellidos.Text
+datos.Cells(fila, 4) = txttipoDoc.Text
+datos.Cells(fila, 5) = txtnumDoc.Text
+datos.Cells(fila, 6) = txtedad.Text
+datos.Cells(fila, 7) = txtsexo.Text
+datos.Cells(fila, 8) = txteps.Text
+datos.Cells(fila, 9) = txtnomAcud1.Text
+datos.Cells(fila, 10) = txtapellAcud1.Text
+
+MsgBox "GUARDADO"
+
+txtrol.Text = Empty
+txtnombres.Text = ""
+txtapellidos.Text = ""
+txttipoDoc.Text = ""
+txtnumDoc.Text = ""
+txtedad.Text = ""
+txtsexo.Text = ""
+txteps.Text = ""
+txtnomAcud1 = ""
+txtapellAcud1 = ""
+
+txtrol.Enabled = False
+txtnombres.Enabled = False
+txtapellidos.Enabled = False
+txttipoDoc.Enabled = False
+txtnumDoc.Enabled = False
+txtedad.Enabled = False
+txtsexo.Enabled = False
+txteps.Enabled = False
+txtnomAcud1.Enabled = False
+txtapellAcud1.Enabled = False
+btnguardar.Enabled = False
+btnnuevo.Enabled = True
+btnnuevo.SetFocus
+
+
+End Sub
+
+Private Sub btnnuevo_Click()
+
+txtrol.Enabled = True
+txtnombres.Enabled = True
+txtapellidos.Enabled = True
+txttipoDoc.Enabled = True
+txtnumDoc.Enabled = True
+txtedad.Enabled = True
+txtsexo.Enabled = True
+txteps.Enabled = True
+txtnomAcud1.Enabled = True
+txtapellAcud1.Enabled = True
+btnguardar.Enabled = True
+btnnuevo.Enabled = False
+txtrol.SetFocus
+
+End Sub
