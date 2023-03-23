@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#cont{
+    /*Hace que salga pantalla completa*/
+    max-width: 100%;
+    background-color: rgb(238, 238, 238);
+}
+
+h1, strong{
+    align-items: center;
+    color: rgb(0, 0, 0); 
+    display:flex;
+    font-size: 250%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    line-height: 300%;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+/*
+.marca-de-agua {
+    background-image: url("../IMGENES/CR_LOGO.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25%;
+    height: 50%;
+    margin: auto;
+}
+.marca-de-agua img {
+    padding: 0;
+    width: 25%;
+    height: 50;
+    opacity: 0.7;
+}*/
+
