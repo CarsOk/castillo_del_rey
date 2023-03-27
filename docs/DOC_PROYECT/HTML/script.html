@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../CSS/script.css">
+    <link rel="icon" href="../IMGENES/CR_LOGO_ico.ico">
+    <!-- CSS only -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orange: '#ffc107',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        h1 {
+            @apply font-bold text-2xl mb-[10px];
+        }
+        a {
+            @apply border text-sm hover:text-black hover:bg-orange;
+            @apply border-orange text-orange rounded py-2 shadow cursor-pointer;
+            @apply text-xs font-bold uppercase leading-normal;
+        }
+      </style>
 </head>
+
 <body>
     <h1>SCRIPT</h1>
+        <div class="grid grid-cols-6 gap-6">
+            <a href="../HTML/AsociacionDeAlumnosAGrados.html" target="_blank">Asociacion de alumnos a grados</a>
+            <a href="../HTML/AsociacionDeAsignaturasAGrados.html" target="_blank">Asociacion de asigaturas a grados</a>
+            <a href="../HTML/AsociaciondeDocentesAAsignaturas.html" target="_blank">Asociacion de docentes a asignaturas</a>
+            <a href="../HTML/CrearUsuario.html" target="_blank">Crear usuario</a>
+            <a href="../HTML/EditarUsuario.html" target="_blank">Editar usuario</a>
+            <a href="../HTML/InformacionAsistenciaDelAdministrador.html" target="_blank">informacion asistencia administrador</a>
+            <a href="../HTML/InformacionAsistenciaDocente.html" target="_blank">informacion asistencia docente</a>
+            <a href="../HTML/InformacionNotasAdministrador.html" target="_blank">informacion notas administrador</a>
+            <a href="../HTML/InformacionNotasDocente.html" target="_blank">informacion notas docente</a>
+            <a href="../HTML/Login.html" target="_blank">Login</a>
+            <a href="../HTML/MenuPrincipalAlumno.html" target="_blank">Menu principal alumno</a>
+            <a href="../HTML/MenuPrincipalDocente.html" target="_blank">Menu principal docente</a>
+            <a href="../HTML/MenuPrincipalAdmin.html" target="_blank">Menu principal admin</a>
+            <a href="../HTML/PagosMensualidad.html" target="_blank">Pagos mensualidad</a>
+            <a href="../HTML/RegistrarAsistenciaDocente.html" target="_blank">Registrar asistencia docente</a>
+            <a href="../HTML/login2.html" target="_blank">Login 2</a>
+        </div>
+    </div>
 </body>
 </html>
