@@ -1,0 +1,21 @@
+.head{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border: 1px solid yellow;
+    background-color: yellow;
+}
+
+.tittle{
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    display: flex;
+    text-align: center;
+}
+
+
+
+
