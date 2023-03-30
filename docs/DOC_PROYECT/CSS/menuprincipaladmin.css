@@ -1,0 +1,89 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#cont{
+    /*display: flex, hace que no salga el scroll, y el max-width, hace que aparezca todo completo en la pantalla*/
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    /*Hace que salga pantalla completa*/
+    max-width: 100%;
+    height: fit-content;
+}
+
+header{
+    background-color: rgba(255, 251, 0, 0.774);    
+}
+
+#titulo{
+    padding-right: 8%;
+    
+}
+
+#ft_perfil{
+    font-size: 400%;
+    display: flex;
+    justify-content: end;
+    margin-right: 1%;
+}
+
+#caja_txt{
+    margin-left: 10%;
+}
+
+#btn_txt{
+    border: 1px solid black;
+    background-color: rgba(255, 251, 0, 0.918);
+}
+
+#n_user{
+    font-size: 200%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#create_user{
+    color: black;
+    font-size: 70%;
+}
+
+#tabla{
+    border-style: solid;
+    border-collapse:collapse;
+    border-color: rgb(187, 187, 187);
+}
+
+#btn_asoc{
+    color: black;
+    border: 1px solid black;
+    margin-left: 19%;
+}
+
+.delete_subray{
+    text-decoration: none;
+    color: black;
+}
+
+#tabla, thead, tbody{
+    border-style: none; 
+    border-collapse:collapse;
+    border-color: rgb(0, 0, 0);
+}
+
+/*
+table{
+    border-style: solid; 
+    border-collapse:collapse;
+    border-color: rgb(0, 0, 0);
+    
+}
+El td y th, es diciendole que le va a colocar borde al td y th, si solo tuviera el td, en donde está
+el th no apareciera borde.
+El border-style: Es para decirle como quiero el borde, sea solid, inset, none, etc.
+Y el border-collapse:collapse, es para que no aparezcan las celdas como tal (una celda, otra celda, etc), 
+si no que aparezca una sola linea, como tabla  */

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/local.css">
+    <link rel="icon" href="../IMGENES/CR_LOGO_ico.ico">
+    <title>Menu principal del administrador</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orange: '#ffc107',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        h1 {
+            @apply font-bold text-2xl mb-[10px];
+        }
+        a {
+            @apply border text-sm hover:text-black hover:bg-orange;
+            @apply border-orange text-orange rounded py-2 shadow cursor-pointer;
+            @apply text-xs font-bold uppercase leading-normal;
+        }
+      </style>
+</head>
+<body>
+
+    <h1 class="tittle">Menu principal del administrador</h1>
+    <a href="/script_interfaces_proyecto/HTML/reg_notas_docente.html" target="_blank" class="button">Ver codigo ejecutado</a>
+    <div>
+        <pre class="notranslate"><code class="notranslate">    &lt;!-- CSS only --&gt;
+            &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"&gt;
+        &lt;/head&gt;
+        
+        
+        
+        &lt;body&gt;
+        
+            &lt;div id="cont" class="container text-center"&gt;
+                &lt;header class="row"&gt;
+                    &lt;br&gt;
+                &lt;/header&gt;
+        
+                &lt;nav class="row"&gt;
+                    &lt;article id="logo" class="col-3"&gt;
+                        &lt;img src="../IMGENES/CR_LOGO.png" width="50%" height="90%" alt="Logo de la institución"&gt;
+                    &lt;/article&gt;
+        
+                    &lt;article id="titulo" class="col-7 mt-2"&gt;
+                        &lt;h2&gt;&lt;strong&gt;Institución Educativa &lt;br&gt; Castillo del rey&lt;/strong&gt;&lt;/h2&gt;
+                    &lt;/article&gt;
+        
+                    &lt;article id="ft_perfil" class="col mt-2"&gt;
+                        &lt;span class="icon icon-user"&gt;&lt;/span&gt;
+                    &lt;/article&gt;
+                &lt;/nav&gt;
+        
+                &lt;nav class="row"&gt;
+                    &lt;h5&gt;&lt;strong&gt;Registro de Notas&lt;/strong&gt;&lt;/h5&gt;
+                &lt;/nav&gt;
+        
+                &lt;br&gt;
+                    &lt;section class="row"&gt;
+                            &lt;div class="col"&gt;&lt;/div&gt;
+                            &lt;div class="col"&gt;
+                &lt;form&gt;
+                                    &lt;input type="text" class="form-control" value="GRADO" readonly&gt;
+                            &lt;/div&gt;
+        
+                            &lt;div class="col"&gt;
+                                &lt;select name="asig" class="form-control"&gt;
+                                    &lt;option value="sel" selected&gt; Seleccione Asignatura&lt;/option&gt;
+                                    &lt;option value="AR"&gt;ARTÍSTICA&lt;/option&gt;
+                                    &lt;option value="CN"&gt;CIENCIAS NATURALES&lt;/option&gt;
+                                    &lt;option value="CL"&gt;COMPRENSIÓN LECTORA&lt;/option&gt;
+                                    &lt;option value="ED_CRI"&gt;EDUCACIÓN CRISTIANA&lt;/option&gt;
+                                    &lt;option value="ED_FI"&gt;EDUCACIÓN FÍSICA&lt;/option&gt;
+                                    &lt;option value="ESP"&gt;ESPAÑOL&lt;/option&gt;
+                                    &lt;option value="INF"&gt;INFORMÁTICA&lt;/option&gt;
+                                    &lt;option value="INGLES"&gt;INGLES&lt;/option&gt;
+                                    &lt;option value="INT"&gt;INTEGRADAS&lt;/option&gt;
+                                    &lt;option value="MAT"&gt;MATEMÁTICAS&lt;/option&gt;
+                                    &lt;option value="SOC"&gt;SOCIALES&lt;/option&gt;
+                                    
+                                &lt;/select&gt;
+                            &lt;/div&gt;
+        
+                            &lt;div class="col"&gt;
+                                &lt;select name="periodo" class="form-control"&gt;
+                                    &lt;option value="sel" selected&gt; Seleccione Periodo&lt;/option&gt;
+                                    &lt;option value="PR"&gt;PRIMERO&lt;/option&gt;
+                                    &lt;option value="SG"&gt;SEGUNDO&lt;/option&gt;
+                                    &lt;option value="TR"&gt;TERCERO&lt;/option&gt;
+                                    &lt;option value="CT"&gt;CUARTO&lt;/option&gt;
+                                &lt;/select&gt;
+                            &lt;/div&gt;
+        
+                            &lt;div class="col"&gt;
+                                &lt;input type="datetime-local" class="form-control"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col"&gt;&lt;/div&gt;
+                    &lt;/section&gt;
+        
+                    &lt;br&gt;
+        
+                    &lt;section class="row"&gt;
+                        &lt;div class="col-2"&gt;&lt;/div&gt;
+                        &lt;div class="col-8"&gt;
+                            &lt;table id="tabla" class="table table-bordered border-black"&gt;
+                                &lt;thead&gt;
+                                    &lt;tr&gt;
+                                        &lt;th&gt;CÓDIGO&lt;/th&gt;
+                                        &lt;th&gt;NOMBRE COMPLETO&lt;/th&gt;
+                                        &lt;th&gt;&lt;input type="text" placeholder="Escriba el concepto" name="concepto"&gt;&lt;/th&gt;
+                                    &lt;/tr&gt;
+                                &lt;/thead&gt;
+        
+                                &lt;tbody&gt;
+                                    &lt;tr&gt;
+                                        &lt;th scope="row"&gt;0001&lt;/th&gt;
+                                        &lt;td&gt;Nombre de alumno&lt;/td&gt;
+                                        &lt;td&gt;&lt;input type="number" step="0.1" name="valor" min="1"&gt;&lt;/td&gt;
+                                    &lt;/tr&gt;
+        
+                                    &lt;tr&gt;
+                                        &lt;th scope="row"&gt;0003&lt;/th&gt;
+                                        &lt;td&gt;Nombre de alumno&lt;/td&gt;
+                                        &lt;td&gt;&lt;input type="number" step="0.1" name="valor" min="1"&gt;&lt;/td&gt;
+                                    &lt;/tr&gt;
+        
+                                    &lt;tr&gt;
+                                        &lt;th scope="row"&gt;0004&lt;/th&gt;
+                                        &lt;td&gt;Nombre de alumno&lt;/td&gt;
+                                        &lt;td&gt;&lt;input type="number" step="0.1" name="valor" min="1"&gt;&lt;/td&gt;
+                                    &lt;/tr&gt;
+        
+                                    &lt;tr&gt;
+                                        &lt;th scope="row"&gt;0005&lt;/th&gt;
+                                        &lt;td&gt;Nombre de alumno&lt;/td&gt;
+                                        &lt;td&gt;&lt;input type="number" step="0.1" name="valor" min="1"&gt;&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/tbody&gt;
+                            &lt;/table&gt;
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+        
+                    &lt;footer&gt;
+                        &lt;button type="submit" name="accion" class="btn" id="btn_txt"&gt;GUARDAR&lt;/button&gt;
+                    &lt;/footer&gt;
+                &lt;/form&gt;
+        
+        
+                
+        
+            &lt;/div&gt;
+            
+            &lt;!-- JavaScript Bundle with Popper --&gt;
+            &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"&gt;&lt;/script&gt;
+        &lt;/body&gt;
+        </code></pre>
+            <h1 class="tittle">CSS</h1>
+    <p>
+        *{<br>
+            margin: 0%;<br>
+            padding: 0%;<br>
+            box-sizing: border-box;<br>
+        }<br>
+        
+        #cont{<br>
+            /*Hace que salga pantalla completa*/<br>
+            max-width: 100%;<br>
+        }<br>
+        
+        header{<br>
+            background-color: rgba(255, 251, 0, 0.774);<br>
+        }<br>
+        
+        #titulo{<br>
+            padding-right: 8%;<br>
+        }<br>
+        
+        #ft_perfil{<br>
+            font-size: 400%;<br>
+            display: flex;<br>
+            justify-content: end;<br>
+            margin-right: 1%;<br>
+        }<br>
+        
+        #tabla, thead, tbody{<br>
+            border-style: none; <br>
+            border-collapse:collapse;<br>
+            border-color: rgb(0, 0, 0);<br>
+        }<br>
+        
+        #btn_txt{<br>
+            border: 1px solid black;<br>
+            background-color: rgba(255, 251, 0, 0.918);<br>
+        }<br>
+        
+    </p>
+
+
+</body>
+</html>
