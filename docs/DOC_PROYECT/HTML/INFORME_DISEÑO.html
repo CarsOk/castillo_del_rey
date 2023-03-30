@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<head>
+    <title>Informe de Diseño</title>
+</head>
+<body>
+    <center>
+    <img src="data:image/png;base64,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" alt="">
+    <h3>SERVICIO NACIONAL DE APRENDIZAJE <br> 
+        (Centro Industrial y de Aviación) 
+    </h3>
+    <h2>Informe del análisis</h2>
+    <p>
+        Presentado por: <br>
+        Adis Ortiz Gómez <br>
+        Adrian Contreras Dickson <br>
+        Adrián Gómez Bolaño <br>
+        Orlando Julio López <br>
+        Oscar Escorcia Palencia
+    <p>
+    <h5>Historial de Revisiones </h5>
+    <table>
+        <style type="text/css">
+            table, th, td{
+                border: 2px solid black;
+                border-collapse: collapse
+            };
+            th, td {
+                padding: 15px;
+            }
+            th{
+                text-align: center;
+            }
+        </style>
+            <th>Fecha</th>
+            <th>Version</th>
+            <th>Descripcion/Cambio</th>
+            <th>Autores</th>
+        </tr>
+        <tr>
+            <td>29/12/2020</td>
+            <td>1.0 </td>
+            <td>Primer documento</td>
+            <td>
+                Adis Ortiz Gómez <br>
+                Adrian Contreras Dickson <br>
+                Adrián Gómez Bolaño <br>
+                Orlando Julio López <br>
+                Oscar Escorcia Palencia <br>
+
+            </td>
+        </tr>
+    </table>
+    </center>
+    <ul>
+        <ol>
+            <li><h2>Proposito</h2>
+                El propósito de este documento es tener el modelo de las interfaces, de como va hacer el aplicativo web una vez realizado, tener el diseño del software y del hardware
+            </li>
+            <li><h2>Alcance</h2>
+                Nos comprometemos a realizar un aplicativo web que contenga la información suministrada en los casos de uso, diagramas de actividad, de clase y el modelo entidad relación
+            </li>
+            <li><h2>Definiciones, Acrónimos, y Abreviaturas</h2>
+                FR: Requerimientos funcionales
+                RFN: Requerimientos no funcionales
+            </li>
+            <li><h2> Personal </h2>
+                <table border="3">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Telefono</th>
+                    </tr>
+                    <tr>
+                        <td>Adis Ortiz Gómez</td>
+                        <td><a href="adispatriciaortizgomez@gmail.com ">adispatriciaortizgomez@gmail.com</a></td>
+                        <td>3003913990</td>
+                    </tr>
+                    <tr>
+                        <td>Adrián Contreras dickson</td>
+                        <td><a href="adriancontrerasdickson@gmail.com">adriancontrerasdickson@gmail.com</a></td>
+                        <td>3242078697</td>
+                    </tr>
+                    <tr>
+                        <td>Adrián Gómez Bolaños </td>
+                        <td><a href="Adriangomezadrian200207@outlook.com">Adriangomezadrian200207@outlook.com</a></td>
+                        <td>3005451927</td>
+                    </tr>
+                    <tr>
+                        <td>Oscar Escorcia Palencia</td>
+                        <td><a href="Oscarescorciapalencia@gmail.com">Oscarescorciapalencia@gmail.com</a></td>
+                        <td>3183997356</td>
+                    </tr>
+                    <tr>
+                        <td>Orlando Julio López</td>
+                        <td><a href="Orlandojulio76@gmail.com">Orlandojulio76@gmail.com</a></td>
+                        <td>3002988296</td>
+                    </tr>
+                </table>
+            </li>
+            <li><h2>Situación Actual</h2></li>
+            <li><h2> Perspectiva del Producto</h2>
+                Las perspectivas del producto son la elaboración de un aplicativo web, el cual va a estar en capacidad de llevar el registro de los usuarios, la asistencia de cada alumno, las notas de dichos estudiantes y el control de pago de mensualidades
+            </li>
+            <li><h2> Funciones del Producto </h2>
+                Las funciones con las que contará el sistema son:
+                <ul>
+                    <li>
+                        Registro de usuarios: <br>
+                        Usuario Administrativo <br>
+                        Usuario para docentes <br>
+                        Usuario para alumnos/padres de familia
+                    </li>
+                    <li>Iniciar sesión con el documento de identidad y contraseña</li>
+                    <li>Menú principal, con diferentes funciones, dependiendo del rol del usuario</li>
+                    <li>Registro de docente, que a su vez permitirá inhabilitarlos cuando ya no haga parte de la institución</li>
+                    <li> Registro de asistencia de cada alumno.</li>
+                    <li>Registro de notas</li>
+                    <li>Realización de boletines</li>
+                </ul>
+            </li>
+            <li><h2> Características de Usuario </h2>
+                El sistema cuenta con tres tipos de usuarios:
+                <ul>
+                    <li> El primero usuario se le atribuye al personal directivo, en este caso a la directora, con un nivel de educación superior, tener por lo menos, un nivel intermedio del uso de la informática. </li>
+                </ul>
+                Las funciones que cumple este usuario son:
+                <ul>
+                    <li>Registrar a los docentes y a su vez poder inhabilitarlos si ya no hacen parte de la institución. </li>
+                    <li>Llevar el control de los pagos de mensualidades de cada alumno</li>
+                    <li> El siguiente corresponde a los docentes, quienes deben tener un nivel de educación superior y conocimientos básicos acerca de computación</li>
+                </ul>
+                Las funciones que tienen son:
+                <ul>
+                    <li> Registrar la asistencia de cada alumno</li>
+                    <li> Ingresar las notas a los estudiantes</li>
+                    <li> Realizar los boletines correspondientes de cada niño</li>
+                    <li> El ultimo usuario son los alumnos/padres de familia, los cuales quizá no tengan el conocimiento acerca de cómo usarlo</li>
+                    <li>Este usuario tendrá la posibilidad de ver su progreso/nivel académico</li>
+                </ul>
+            </li>
+            <li><h2> Requerimientos Funcionales </h2>
+                <table>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Descripcion</th>
+                    </tr>
+                    <tr>
+                        <td>RF-001</td>
+                        <td>Permitirá que los usuarios puedan ingresar al aplicativo web</td>
+                    </tr>
+                    <tr>
+                        <td>RF-002</td>
+                        <td>Este módulo permitirá tomar la asistencia de cada estudiante <br> en los diferentes grados</td>
+                    </tr>
+                    <tr>
+                        <td>RF-003</td>
+                        <td>Este módulo permitirá llevar el registro de <br> notas de cada alumno</td>
+                    </tr>
+                    <tr>
+                        <td>RF-004</td>
+                        <td>Este módulo permitirá registrar los diferentes tipos de usuario <br> tales como: docentes y alumnos</td>
+                    </tr>
+                    <tr>
+                        <td>RF-005</td>
+                        <td>Este módulo permitirá llevar el control de los <br> pagos mensuales de los alumnos</td>
+                    </tr>
+                    <tr>
+                        <td>RF-006</td>
+                        <td>Este módulo permitirá que los padres de familia o <br> estudiantes puedan visualizar su estado académico.</td>
+                    </tr>
+                    <tr>
+                        <td>RF-007</td>
+                        <td>Este módulo permitirá realizar los boletines de cada alumno, <br> con su respectivo nombre, grado, periodo, notas definitivas <br> de las asignaturas vista por dicho estudiante, entre otros datos</td>
+                    </tr>
+                    <tr>
+                        <td>RF-008</td>
+                        <td>En este módulo se realizará la asignación de <br> las asignaturas a los docentes</td>
+                    </tr>
+                    <tr>
+                        <td>RF-009</td>
+                        <td>En este módulo se realizará la asignación de materias a grados</td>
+                    </tr>
+                    <tr>
+                        <td>RF-010</td>
+                        <td>Este módulo esta desarrollado para asignar a <br> los alumnos en sus respectivos grados</td>
+                    </tr>
+                </table>
+            </li>
+            <li><h2> Requerimientos no Funcionales </h2>
+                <table border="3">
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Descripcion</th>
+                    </tr>
+                    <tr>
+                        <td>RFN-001</td>
+                        <td>Al sistema, no podrá ingresar cualquier persona, solamente aquellas registradas</td>
+                    </tr>
+                    <tr>
+                        <td>RFN-002</td>
+                        <td>El sistema deberá cumplir con las condiciones y funciones establecidas</td>
+                    </tr>
+                    <tr>
+                        <td>RFN-003</td>
+                        <td>El sistema se deberá adaptar a cualquier entorno del dispositivo en cual se ingrese</td>
+                    </tr>
+                    <tr>
+                        <td>RFN-004</td>
+                        <td>Si se va a realizar alguna función en el programa, el sistema deberá ser capaz de <br> mostrar la información en un determinado tiempo (lo más pronto posible)</td>
+                    </tr>
+                    <tr>
+                        <td>RFN-005</td>
+                        <td>El sistema siempre (la mayoría de las veces), debe estar en función, cuando sea requerido</td>
+                    </tr>
+                    <tr>
+                        <td>RFN-006</td>
+                        <td>El sistema deberá ser de fácil uso para los usuarios</td>
+                    </tr>
+                </table>
+            </li>
+            <li><h2> Modelo Entidad Relación </h2>
+                <img src="../IMGENES/diagramas/diagrama_er/Diagrama ER_PROYECTO.png" height="920px" width="980px">
+            </li>
+            <li><h2>Diagramas Casos de Uso (UML)</h2>
+                <img src="../IMGENES/diagramas/diagrama_caso_de_uso/INICIO DE SESION.jpg">
+                <img src="../IMGENES/diagramas/diagrama_caso_de_uso/ASOCIACIÓN PROFESORES A ASIGNATURAS (1).jpg">
+                <img src="https://raw.githubusercontent.com/CarsOk/castillo_del_rey/Desarrollo/DIAGRAMAS/DIAGRAMA_CASO_DE_USO/NOTAS.jpg"> <br>
+                <img src="../IMGENES/diagramas/diagrama_caso_de_uso/GESTIÓN DE USUARIO.jpg"> <br>
+                <img src="../IMGENES/diagramas/diagrama_caso_de_uso/PAGO DE MENSUALIDAD.jpg"> <br>
+                <img src="../IMGENES/diagramas/diagrama_caso_de_uso/NOTAS.jpg"> <br>
+                <img src="../IMGENES/diagramas/diagrama_caso_de_uso/ASOCIACIÓN PROFESORES A ASIGNATURAS (1).jpg"> <br>
+                <img src="../IMGENES/diagramas/diagrama_caso_de_uso/ASOCIACIÓN ASIGNATURAS A GRADOS.jpg"> <br>
+                <img src="../IMGENES/diagramas/diagrama_caso_de_uso/ASOCIACIÓN ALUMNOS A GRADOS .jpg">
+                <h2>Documentacion caso de uso</h2>
+                <h4>CASO DE USO 1 INICIO DE SESION</h4>
+                <table border="3">
+                    <tr>
+                        <th>Caso de Uso</th>
+                        <th colspan="2">Inicio de Sesion</th>
+                        <tr>
+                            <td>Descripcion</td>
+                            <td colspan="2">Los usuarios iniciarán sesión por medio de su <br> 
+                                usuario y contraseña, así cada uno ingresará a <br>
+                                su menú, dependiendo su rol
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Precondición </td>
+                            <td colspan="2">Debe estar registrado</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">Secuencia normal</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Buscar el aplicativo web</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ingresar usuario</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Ingresar su contraseña</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Dar clic a continuar.</td>
+                        </tr>
+                        <tr>
+                            <td>Postcondición</td>
+                            <td colspan="2">Se ingresará al aplicativo web.</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">excepciones</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>No estar registrado.</td>
+                        </tr>
+                    </tr>
+                </table>
+                <br>
+                <table border="3">
+                    <tr>
+                        <th>Caso de Uso</th>
+                        <th colspan="2">Salir</th>
+                        <tr>
+                            <td>Descripcion</td>
+                            <td colspan="2">El aplicativo web tendrá la opción de salir una <br> 
+                                vez iniciada la sesión
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Precondición </td>
+                            <td colspan="2">Para poder salir del aplicativo primero hay que <br>
+                                iniciar sesión
+                                </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">Secuencia normal</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Clic en configuración</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Opción salir</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Mensaje: ¿Está seguro que desea 
+                                salir?
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Aceptar</td>
+                        </tr>
+                        <tr>
+                            <td>Postcondición</td>
+                            <td colspan="2">Se sale del aplicativo web.</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">excepciones</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Si no se ha iniciado sesión no se <br>
+                                puede cerrar el aplicativo
+                            </td>
+                        </tr>
+                    </tr>
+                </table>
+                <h4>CASO DE USO N°2 ASISTENCIA</h4>
+                <table border="3">
+                    <tr>
+                        <th>Caso de Uso</th>
+                        <th colspan="2">Registrar Asistencia</th>
+                        <tr>
+                            <td>Descripcion</td>
+                            <td colspan="2">El aplicativo web tendrá la opción de registrar <br>
+                                la asistencia de cada alumno.                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Precondición </td>
+                            <td colspan="2">Deben estar registrados los alumnos y <br>
+                                docentes                                
+                                </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="6">Secuencia normal</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Iniciar sesión</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Opción Asistencia</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Seleccione grado
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>ngresar asistencia a los alumnos 
+                                presentes
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Opción Guardar
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Postcondición</td>
+                            <td colspan="2">Queda registrada la asistencia</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">excepciones</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>No haya alumnos registrados </td>
+                        </tr>
+                    </tr>
+                </table>
+                <h4>CASO DE USO N°3 NOTAS</h4>
+                <table border="3">
+                    <tr>
+                        <th>Caso de Uso</th>
+                        <th colspan="2">Ingresar Notas</th>
+                        <tr>
+                            <td>Descripcion</td>
+                            <td colspan="2">El aplicativo web tendrá la opción de ingresar notas a 
+                                los alumnos                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Precondición </td>
+                            <td colspan="2">Los alumnos deben estar registrados                               
+                                </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="7">Secuencia normal</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Iniciar sesión</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Opción Ingresar Notas</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Seleccione grado
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Seleccion Alumno
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Ingresar notas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Guardar</td>
+                        </tr>
+                        <tr>
+                            <td>Postcondición</td>
+                            <td colspan="2"> Quedará la nota registrada en la base de datos </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">excepciones</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>No haya alumnos registrados</td>
+                        </tr>
+                    </tr>
+                </table>
+                <h4>CASO DE USO N°4 GESTIÓN DE USUARIOS</h4>
+                <table border="3">
+                    <tr>
+                        <th>Caso de Uso</th>
+                        <th colspan="2">CREAR USUARIOS </th>
+                        <tr>
+                            <td>Descripcion</td>
+                            <td colspan="2">Se podrá crear usuarios para registrarlos en el aplicativo.                               
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Precondición </td>
+                            <td colspan="2">Haber pagado la matricula(estudiante)
+                                Estar contratado(profesor)                                                              
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="6">Secuencia normal</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Iniciar sesión (Admin)</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Opción usuarios</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Opción crear usuarios
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Ingresar información
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Guardar
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Postcondición</td>
+                            <td colspan="2"> Quedará registrada la creación del usuario </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">excepciones</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Que no sea el administrador.</td>
+                        </tr>
+                    </tr>
+                </table>
+                <br>
+                <table border="3">
+                    <tr>
+                        <th>Caso de Uso</th>
+                        <th colspan="2">EDITAR USUARIO</th>
+                        <tr>
+                            <td>Descripcion</td>
+                            <td colspan="2">En este caso de uso se podrá editar la información de manera que <br> el administrador pueda agregar o eliminar información.                               
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Precondición </td>
+                            <td colspan="2">Debe haber un usuario y su información existente.                             
+                                </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">Secuencia normal</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Entrar al aplicativo.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Seleccionar el usuario</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Ingresar información deseada 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Guardar
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Postcondición</td>
+                            <td colspan="2"> Se guarda y se muestra la nueva información editada </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">excepciones</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>No ser administrador.</td>
+                        </tr>
+                    </tr>
+                </table>
+                <br>
+                <table border="3">
+                    <tr>
+                        <th>Caso de Uso</th>
+                        <th colspan="2">ELIMINAR USUARIOS</th>
+                        <tr>
+                            <td>Descripcion</td>
+                            <td colspan="2">El aplicativo tendrá la opción de eliminar a usuarios <br> que estén registrados en la aplicativo                               
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Precondición </td>
+                            <td colspan="2">El usuario debe estar registrado previamente                             
+                                </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="7">Secuencia normal</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Ingresar al aplicativo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Opción usuarios</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Opción eliminar usuarios
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Seleccionar rol
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Seleccionar usuario
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Eliminar usuario</td>
+                        </tr>
+                        <tr>
+                            <td>Postcondición</td>
+                            <td colspan="2"> El usuario quedará eliminado</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">excepciones</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>No ser el administrador  </td>
+                        </tr>
+                    </tr>
+                </table>
+                <h4>CASO DE USO N°5 PAGO DE MENSUALIDAD</h4>
+                <table border="3">
+                    <tr>
+                        <th>Caso de Uso</th>
+                        <th colspan="2">REGISTRAR PAGO</th>
+                        <tr>
+                            <td>Descripcion</td>
+                            <td colspan="2">En este módulo se llevará a cabo una contabilidad <br> para llevar en orden el pago de la mensualidad                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Precondición </td>
+                            <td colspan="2">Ser un alumno activo                           
+                                </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="7">Secuencia normal</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Opción pago de mensualidad</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Seleccionar grado</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Seleccionar alumno
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Ingresar reporte de pago
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Guardar pago 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Postcondición</td>
+                            <td colspan="2"> Quedará registrado el pago </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">excepciones</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>No ser el administrador </td>
+                        </tr>
+                    </tr>
+                </table>
+                <br>
+                <table border="3">
+                    <tr>
+                        <th>Caso de Uso</th>
+                        <th colspan="2">EDITAR PAGO</th>
+                        <tr>
+                            <td>Descripcion</td>
+                            <td colspan="2">En este caso de uso se podrá editar los pagos mensuales de los acudientes.                               
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Precondición </td>
+                            <td colspan="2">El alumno al cual se desea cancelar la mensualidad debe estar registrado                            
+                                </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="7">Secuencia normal</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Opción pago de mensualidad</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Opción editar pago</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Seleccionar grado
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Seleccionar alumno
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Ingresar reporte de pago
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Guardar
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Postcondición</td>
+                            <td colspan="2"> Se guardará la información suministrada </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">excepciones</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>No ser el administrador</td>
+                        </tr>
+                    </tr>
+                </table>
+                <h4>CASO DE USO N°6 VISUALIZACIÓN DE NOTAS</h4>
+                <table border="3">
+                    <tr>
+                        <th>Caso de Uso</th>
+                        <th colspan="2">VISUALIZACIÓN DE NOTAS</th>
+                        <tr>
+                            <td>Descripcion</td>
+                            <td colspan="2">El alumno o padre de familia, tendrá la posibilidad de ver sus notas                               
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Precondición </td>
+                            <td colspan="2">Estar al día con la mensualidad                             
+                                </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">Secuencia normal</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Iniciar sesión</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Seleccionar periodo </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Seleccionar asignatura
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Postcondición</td>
+                            <td colspan="2"> Visualización de las notas </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">excepciones</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>No tener el rol de alumno o docente</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>No haber cancelado la mensualidad</td>
+                        </tr>
+                    </tr>
+                </table>
+                <h4>CASO DE USO N°7 BOLETINES</h4>
+                <table border="3">
+                    <tr>
+                        <th>Caso de Uso</th>
+                        <th colspan="2">SELECCIONAR DATOS</th>
+                        <tr>
+                            <td>Descripcion</td>
+                            <td colspan="2">Se seleccionarán los datos de los alumnos para que se generé el boletín                               
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Precondición </td>
+                            <td colspan="2">1.	Información completa y valida                            
+                                </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="7">Secuencia normal</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Opción boletines</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Seleccionar grado</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Seleccionar periodo
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Seleccionar alumno
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Seleccionar asignaturas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Opción guardar
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Postcondición</td>
+                            <td colspan="2"> Boletín generado</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">excepciones</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                        </tr>
+                    </tr>
+                </table>
+                <h4>CASO DE USO N°8 ASOCIACIÓN DOCENTE A ASIGNATURA</h4>
+                <table border="3">
+                    <tr>
+                        <th>Caso de Uso</th>
+                        <th colspan="2">ASOCIAR DOCENTES A ASIGNATURA</th>
+                        <tr>
+                            <td>Descripcion</td>
+                            <td colspan="2">Este módulo es para asociar a los docentes con su asignatura correspondiente                           
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Precondición </td>
+                            <td colspan="2">Se debe haber iniciado sesión para entrar al aplicativo y poder ejercer este modulo                         
+                                </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="6">Secuencia normal</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Entrar a la opción de asociación </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Clic en opción asociación docentes a asignaturas</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Seleccionar docente
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Seleccionar asignaturas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Guardar
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Postcondición</td>
+                            <td colspan="2"> Mensaje :Asignación exitosa </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">excepciones</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>No ser el administrador</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Intentar asignar una asignatura no registrada 
+                            </td>
+                        </tr>
+                    </tr>
+                </table>
+                <br>
+                <table border="3">
+                    <tr>
+                        <th>Caso de Uso</th>
+                        <th colspan="2">EDITAR ASOCIACIONES DE DOCENTES A ASIGNATURAS</th>
+                        <tr>
+                            <td>Descripcion</td>
+                            <td colspan="2">En este módulo se podrán editar las asignaturas que tenga cada docente                             
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Precondición </td>
+                            <td colspan="2">Haber entrado a la opción de editar la asociación                           
+                                </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="8">Secuencia normal</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Entrar a la opción de asociación </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Opción editar asociaciones</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Editar asociaciones docentes asignaturas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Seleccionar docente
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Opción editar asignatura
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Opción eliminar asociación
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Guardar
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Postcondición</td>
+                            <td colspan="2"> Mensaje : asignación guardada</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">excepciones</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>No ser el administrador</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Debe haber algo guardado o registrado para poder editar la información
+                            </td>
+                        </tr>
+                    </tr>
+                </table>
+                <h4>CASO DE USO N°9 ASOCIACION ASIGNATURAS A GRADOS</h4>
+                <table border="3">
+                    <tr>
+                        <th>Caso de Uso</th>
+                        <th colspan="2">ASOCIAR ASIGANTURAS A GRADOS</th>
+                        <tr>
+                            <td>Descripcion</td>
+                            <td colspan="2">El administrador tendrá la opción de asociar las asignaturas a sus respectivos grados                             
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Precondición </td>
+                            <td colspan="2">Debe iniciar sesión                          
+                                </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="7">Secuencia normal</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Iniciar sesión</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Opción asociaciones</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Opción asociación asignaturas a grados
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Seleccionar asignaturas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Seleccionar grado
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Guardar
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Postcondición</td>
+                            <td colspan="2"> Mensaje: Asignación exitosa </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">excepciones</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>No ser el administrador</td>
+                        </tr>
+                    </tr>
+                </table>
+                <h4>CASO DE USO N°10 ASOCIACION ALUMNOS A GRADOS</h4>
+                <table border="3">
+                    <tr>
+                        <th>Caso de Uso</th>
+                        <th colspan="2">ASOCIAR ALUMNOS A GRADOS</th>
+                        <tr>
+                            <td>Descripcion</td>
+                            <td colspan="2">El administrador tendrá la opción de asociar a los alumnos con sus respectivos grados                              
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Precondición </td>
+                            <td colspan="2">El alumno debe estar matriculado                           
+                                </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="7">Secuencia normal</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Iniciar sesión</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Opción asociaciones</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Opción asociación alumnos a grados
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Seleccionar alumno
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Seleccionar grado
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Guardar
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Postcondición</td>
+                            <td colspan="2"> Mensaje: Asignación exitosa </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">excepciones</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>No ser el administrador</td>
+                        </tr>
+                    </tr>
+                </table>
+                <br>
+                <table border="3">
+                    <tr>
+                        <th>Caso de Uso</th>
+                        <th colspan="2">MODIFICAR ASOCIACIÓN DE ALUMNOS A GRADOS</th>
+                        <tr>
+                            <td>Descripcion</td>
+                            <td colspan="2">El administrador tendrá la opción de editar la asociación de alumnos a grados                              
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Precondición </td>
+                            <td colspan="2">Debe iniciar sesión                           
+                                </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="10">Secuencia normal</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Iniciar sesión</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Opción asociaciones</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Opción asociación alumnos a grados
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Opción editar asociación
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Opción editar asociación alumnos a grados 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Seleccionar alumno
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Opción Editar grado
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Opción eliminar asociación
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Guardar
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Postcondición</td>
+                            <td colspan="2"> Información guardada </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">excepciones</td>
+                            <td>Paso</td>
+                            <td>Accion</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>No ser el administrador</td>
+                        </tr>
+                    </tr>
+                </table>
+            </li>
+            <li><h2>Diagramas de Actividades (UML) </h2>
+                <img src="../IMGENES/diagramas/diagrama_actividad/INICIO DE SESION.jpg" height="720px" width="620px"> <br>
+                <img src="../IMGENES/diagramas/diagrama_actividad/ASISTENCIA.jpg" height="720px" width="620px"> <br>
+                <img src="../IMGENES/diagramas/diagrama_actividad/NOTAS.jpg"> <br>
+                <img src="../IMGENES/diagramas/diagrama_actividad/GESTIÓN DE USUARIOS.jpg" height="720px" width="620px"> <br>
+                <img src="../IMGENES/diagramas/diagrama_actividad/PAGO DE MENSUALIDAD.jpg" height="890px" width="600px"> <br>
+                <img src="../IMGENES/diagramas/diagrama_actividad/VISUALIZACIÓN DE NOTAS.jpg" height="720px" width="620px"> <br>
+                <img src="../IMGENES/diagramas/diagrama_actividad/ASOCIACIÓN ASIGNATURAS A GRADOS.jpg"> <br>
+                <img src="../IMGENES/diagramas/diagrama_actividad/ASOCIACIÓN DOCENTE A ASIGNATURAS.jpg"> <br>
+                <img src="../IMGENES/diagramas/diagrama_actividad/ASOCIACIÓN ALUMNOS A GRADOS.jpg">
+            </li>
+            <li><h2>14.	Diagrama de clases (UML)</h2>
+                <img src="" alt="Diagrama de clases" height="800px" width="700">
+            </li>
+        </ol>
+
+    </ul>
+</body>
