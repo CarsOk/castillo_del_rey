@@ -8,8 +8,9 @@
     /*Hace que salga pantalla completa*/
     max-width: 100%;
     border-radius: 2%;
-    padding-left: 10%;
-    margin-left: 20%;
+    padding-left: 20%;
+    padding-top: 15%;
+
 }
 
 .delete_subray{
