@@ -16,6 +16,10 @@
     text-align: center;
 }
 
-
+.button{
+    display: flex;
+    justify-content: left;
+    width: 15%;
+}
 
 

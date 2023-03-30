@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/local.css">
+    <link rel="icon" href="../IMGENES/CR_LOGO_ico.ico">
+    <title>Menu principal del docente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orange: '#ffc107',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        h1 {
+            @apply font-bold text-2xl mb-[10px];
+        }
+        a {
+            @apply border text-sm hover:text-black hover:bg-orange;
+            @apply border-orange text-orange rounded py-2 shadow cursor-pointer;
+            @apply text-xs font-bold uppercase leading-normal;
+        }
+      </style>
+</head>
+<body>
+    <div class="head"> 
+            <img src="../IMGENES/CR_LOGO_ico.ico" width="120px" height="120px">
+            <h1>Institución Educativa <br>
+                &nbsp; &nbsp; &nbsp;  Castillo del rey</h1>
+    </div>
+    <h1 class="tittle">Menu principal del docente</h1>
+    <a href="../HTML/menuprincipaldocetecodeexecute.html" target="_blank" class="button">Ver codigo ejecutado</a>
+    <div>
+        <pre>
+            <pre class="notranslate"><span class="pl-c1">&lt;!DOCTYPE html<span class="pl-kos">&gt;</span></span>
+                <span class="pl-kos">&lt;</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span>
+                    <span class="pl-kos">&lt;</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
+                        <span class="pl-kos">&lt;</span><span class="pl-ent">title</span><span class="pl-kos">&gt;</span>MENÚ PRINCIPAL DOCENTE<span class="pl-kos">&lt;/</span><span class="pl-ent">title</span><span class="pl-kos">&gt;</span>
+                        <span class="pl-kos">&lt;</span><span class="pl-ent">meta</span> <span class="pl-c1">name</span>="<span class="pl-s">viewport</span>" <span class="pl-c1">content</span>="<span class="pl-s">width=device-width, initial-scale=1.0</span>"<span class="pl-kos">&gt;</span>
+                        <span class="pl-kos">&lt;</span><span class="pl-ent">link</span> <span class="pl-c1">href</span>="<span class="pl-s">../CSS/menu_principal_docente.css</span>" <span class="pl-c1">rel</span>="<span class="pl-s">stylesheet</span>" <span class="pl-c1">type</span>="<span class="pl-s">text/css</span>"<span class="pl-kos">&gt;</span>       
+                        <span class="pl-kos">&lt;</span><span class="pl-ent">link</span> <span class="pl-c1">rel</span>="<span class="pl-s">icon</span>" <span class="pl-c1">href</span>="<span class="pl-s">../IMGENES/CR_LOGO_ico.ico</span>"<span class="pl-kos">&gt;</span>
+                        <span class="pl-kos">&lt;</span><span class="pl-ent">link</span> <span class="pl-c1">rel</span>="<span class="pl-s">stylesheet</span>" <span class="pl-c1">type</span>="<span class="pl-s">text/css</span>" <span class="pl-c1">href</span>="<span class="pl-s">../style.css</span>"<span class="pl-kos">&gt;</span>
+                
+                        <span class="pl-c">&lt;!-- CSS only --&gt;</span>
+                        <span class="pl-kos">&lt;</span><span class="pl-ent">link</span> <span class="pl-c1">href</span>="<span class="pl-s">https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css</span>" <span class="pl-c1">rel</span>="<span class="pl-s">stylesheet</span>" <span class="pl-c1">integrity</span>="<span class="pl-s">sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD</span>" <span class="pl-c1">crossorigin</span>="<span class="pl-s">anonymous</span>"<span class="pl-kos">&gt;</span>
+                    <span class="pl-kos">&lt;/</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
+                
+                    
+                
+                    <span class="pl-kos">&lt;</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
+                
+                        <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">id</span>="<span class="pl-s">cont</span>" <span class="pl-c1">class</span>="<span class="pl-s">container text-center</span>"<span class="pl-kos">&gt;</span>
+                            <span class="pl-kos">&lt;</span><span class="pl-ent">header</span> <span class="pl-c1">class</span>="<span class="pl-s">row</span>"<span class="pl-kos">&gt;</span>
+                                <span class="pl-kos">&lt;</span><span class="pl-ent">br</span><span class="pl-kos">&gt;</span>
+                            <span class="pl-kos">&lt;/</span><span class="pl-ent">header</span><span class="pl-kos">&gt;</span>
+                
+                            <span class="pl-kos">&lt;</span><span class="pl-ent">nav</span> <span class="pl-c1">class</span>="<span class="pl-s">row</span>"<span class="pl-kos">&gt;</span>
+                                <span class="pl-kos">&lt;</span><span class="pl-ent">article</span> <span class="pl-c1">id</span>="<span class="pl-s">logo</span>" <span class="pl-c1">class</span>="<span class="pl-s">col-3</span>"<span class="pl-kos">&gt;</span>
+                                    <span class="pl-kos">&lt;</span><span class="pl-ent">img</span> <span class="pl-c1">src</span>="<span class="pl-s">../IMGENES/CR_LOGO.png</span>" <span class="pl-c1">width</span>="<span class="pl-s">50%</span>" <span class="pl-c1">height</span>="<span class="pl-s">90%</span>" <span class="pl-c1">alt</span>="<span class="pl-s">Logo de la institución</span>"<span class="pl-kos">&gt;</span>
+                                <span class="pl-kos">&lt;/</span><span class="pl-ent">article</span><span class="pl-kos">&gt;</span>
+                
+                                <span class="pl-kos">&lt;</span><span class="pl-ent">article</span> <span class="pl-c1">id</span>="<span class="pl-s">titulo</span>" <span class="pl-c1">class</span>="<span class="pl-s">col-7 mt-2</span>"<span class="pl-kos">&gt;</span>
+                                    <span class="pl-kos">&lt;</span><span class="pl-ent">h2</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">strong</span><span class="pl-kos">&gt;</span>Institución Educativa <span class="pl-kos">&lt;</span><span class="pl-ent">br</span><span class="pl-kos">&gt;</span> Castillo del rey<span class="pl-kos">&lt;/</span><span class="pl-ent">strong</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">h2</span><span class="pl-kos">&gt;</span>
+                                <span class="pl-kos">&lt;/</span><span class="pl-ent">article</span><span class="pl-kos">&gt;</span>
+                
+                                <span class="pl-kos">&lt;</span><span class="pl-ent">article</span> <span class="pl-c1">id</span>="<span class="pl-s">ft_perfil</span>" <span class="pl-c1">class</span>="<span class="pl-s">col mt-2</span>"<span class="pl-kos">&gt;</span>
+                                    <span class="pl-kos">&lt;</span><span class="pl-ent">span</span> <span class="pl-c1">class</span>="<span class="pl-s">icon icon-user</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">span</span><span class="pl-kos">&gt;</span>
+                                <span class="pl-kos">&lt;/</span><span class="pl-ent">article</span><span class="pl-kos">&gt;</span>
+                            <span class="pl-kos">&lt;/</span><span class="pl-ent">nav</span><span class="pl-kos">&gt;</span>
+                
+                
+                
+                            <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">class</span>="<span class="pl-s">row</span>"<span class="pl-kos">&gt;</span>
+                                <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">class</span>="<span class="pl-s">col-1</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>
+                                <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">class</span>="<span class="pl-s">col-10</span>"<span class="pl-kos">&gt;</span>
+                                    
+                                    <span class="pl-kos">&lt;</span><span class="pl-ent">table</span> <span class="pl-c1">id</span>="<span class="pl-s">tabla</span>" <span class="pl-c1">class</span>="<span class="pl-s">table table-hover</span>"<span class="pl-kos">&gt;</span>
+                                        <span class="pl-kos">&lt;</span><span class="pl-ent">thead</span><span class="pl-kos">&gt;</span>
+                                            <span class="pl-kos">&lt;</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
+                                                <span class="pl-kos">&lt;</span><span class="pl-ent">th</span> <span class="pl-c1">scope</span>="<span class="pl-s">col</span>"<span class="pl-kos">&gt;</span>CÓDIGO<span class="pl-kos">&lt;/</span><span class="pl-ent">th</span><span class="pl-kos">&gt;</span>
+                                                <span class="pl-kos">&lt;</span><span class="pl-ent">th</span> <span class="pl-c1">scope</span>="<span class="pl-s">col</span>"<span class="pl-kos">&gt;</span>GRADO<span class="pl-kos">&lt;/</span><span class="pl-ent">th</span><span class="pl-kos">&gt;</span>
+                                                <span class="pl-kos">&lt;</span><span class="pl-ent">th</span> <span class="pl-c1">scope</span>="<span class="pl-s">col</span>"<span class="pl-kos">&gt;</span>REGISTRO DE ASISTENCIAS<span class="pl-kos">&lt;/</span><span class="pl-ent">th</span><span class="pl-kos">&gt;</span>
+                                                <span class="pl-kos">&lt;</span><span class="pl-ent">th</span> <span class="pl-c1">scope</span>="<span class="pl-s">col</span>"<span class="pl-kos">&gt;</span>REGISTRO DE NOTAS<span class="pl-kos">&lt;/</span><span class="pl-ent">th</span><span class="pl-kos">&gt;</span>
+                                                <span class="pl-kos">&lt;</span><span class="pl-ent">th</span> <span class="pl-c1">scope</span>="<span class="pl-s">col</span>"<span class="pl-kos">&gt;</span>INFORME DE ASISTENCIAS<span class="pl-kos">&lt;/</span><span class="pl-ent">th</span><span class="pl-kos">&gt;</span>
+                                                <span class="pl-kos">&lt;</span><span class="pl-ent">th</span> <span class="pl-c1">scope</span>="<span class="pl-s">col</span>"<span class="pl-kos">&gt;</span>INFORME DE NOTAS<span class="pl-kos">&lt;/</span><span class="pl-ent">th</span><span class="pl-kos">&gt;</span>
+                                            <span class="pl-kos">&lt;/</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
+                                        <span class="pl-kos">&lt;/</span><span class="pl-ent">thead</span><span class="pl-kos">&gt;</span>
+                
+                                        <span class="pl-kos">&lt;</span><span class="pl-ent">tbody</span><span class="pl-kos">&gt;</span>
+                                            <span class="pl-kos">&lt;</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
+                                                <span class="pl-kos">&lt;</span><span class="pl-ent">th</span> <span class="pl-c1">scope</span>="<span class="pl-s">row</span>"<span class="pl-kos">&gt;</span>0003<span class="pl-kos">&lt;/</span><span class="pl-ent">th</span><span class="pl-kos">&gt;</span>
+                                                <span class="pl-kos">&lt;</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>Transición<span class="pl-kos">&lt;/</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>
+                
+                                                <span class="pl-kos">&lt;</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>
+                                                    <span class="pl-kos">&lt;</span><span class="pl-ent">a</span> <span class="pl-c1">class</span>="<span class="pl-s">delete_subray</span>" <span class="pl-c1">href</span>="<span class="pl-s">reg_asistencias_docente.html</span>" <span class="pl-c1">target</span>="" <span class="pl-c1">name</span>="<span class="pl-s">reg_asistencia</span>"<span class="pl-kos">&gt;</span>
+                                                        <span class="pl-kos">&lt;</span><span class="pl-ent">span</span> <span class="pl-c1">class</span>="<span class="pl-s">icon icon-checkbox-checked</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">span</span><span class="pl-kos">&gt;</span>
+                                                    <span class="pl-kos">&lt;/</span><span class="pl-ent">a</span><span class="pl-kos">&gt;</span>
+                                                <span class="pl-kos">&lt;/</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>
+                
+                                                <span class="pl-kos">&lt;</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>
+                                                    <span class="pl-kos">&lt;</span><span class="pl-ent">a</span> <span class="pl-c1">class</span>="<span class="pl-s">delete_subray</span>" <span class="pl-c1">href</span>="<span class="pl-s">reg_notas_docente.html</span>" <span class="pl-c1">target</span>="" <span class="pl-c1">name</span>="<span class="pl-s">reg_notas</span>"<span class="pl-kos">&gt;</span>
+                                                        <span class="pl-kos">&lt;</span><span class="pl-ent">span</span> <span class="pl-c1">class</span>="<span class="pl-s">icon icon-text-color</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">span</span><span class="pl-kos">&gt;</span>
+                                                    <span class="pl-kos">&lt;/</span><span class="pl-ent">a</span><span class="pl-kos">&gt;</span>
+                                                <span class="pl-kos">&lt;/</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>
+                
+                                                <span class="pl-kos">&lt;</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>
+                                                    <span class="pl-kos">&lt;</span><span class="pl-ent">a</span> <span class="pl-c1">class</span>="<span class="pl-s">delete_subray</span>" <span class="pl-c1">href</span>="<span class="pl-s">informe_asistencias_docente.html </span>" <span class="pl-c1">target</span>="" <span class="pl-c1">name</span>="<span class="pl-s">inf_asistencia</span>"<span class="pl-kos">&gt;</span>
+                                                        <span class="pl-kos">&lt;</span><span class="pl-ent">span</span> <span class="pl-c1">class</span>="<span class="pl-s">icon icon-file-text2</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">span</span><span class="pl-kos">&gt;</span>
+                                                    <span class="pl-kos">&lt;/</span><span class="pl-ent">a</span><span class="pl-kos">&gt;</span>
+                                                <span class="pl-kos">&lt;/</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>
+                
+                                                <span class="pl-kos">&lt;</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>
+                                                    <span class="pl-kos">&lt;</span><span class="pl-ent">a</span> <span class="pl-c1">class</span>="<span class="pl-s">delete_subray</span>" <span class="pl-c1">href</span>="<span class="pl-s">informe_notas_docente.html</span>" <span class="pl-c1">target</span>="" <span class="pl-c1">name</span>="<span class="pl-s">inf_notas</span>"<span class="pl-kos">&gt;</span>
+                                                        <span class="pl-kos">&lt;</span><span class="pl-ent">span</span> <span class="pl-c1">class</span>="<span class="pl-s">icon icon-spell-check</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">span</span><span class="pl-kos">&gt;</span>
+                                                    <span class="pl-kos">&lt;/</span><span class="pl-ent">a</span><span class="pl-kos">&gt;</span>
+                                                <span class="pl-kos">&lt;/</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>
+                                            <span class="pl-kos">&lt;/</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
+                                        <span class="pl-kos">&lt;/</span><span class="pl-ent">tbody</span><span class="pl-kos">&gt;</span>    
+                                    <span class="pl-kos">&lt;/</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span>
+                                <span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>
+                            <span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>
+                            
+                            
+                
+                
+                
+                
+                
+                
+                        <span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>
+                        
+                        <span class="pl-c">&lt;!-- JavaScript Bundle with Popper --&gt;</span>
+                        <span class="pl-kos">&lt;</span><span class="pl-ent">script</span> <span class="pl-c1">src</span>="<span class="pl-s">https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js</span>" <span class="pl-c1">integrity</span>="<span class="pl-s">sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN</span>" <span class="pl-c1">crossorigin</span>="<span class="pl-s">anonymous</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span>
+                    <span class="pl-kos">&lt;/</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
+                <span class="pl-kos">&lt;/</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span></pre>
+        </pre>
+        <h1 class="tittle">CSS</h1>
+        <p>
+            *{<br>
+                margin: 0%;<br>
+                padding: 0%;<br>
+                box-sizing: border-box;<br>
+            }<br>
+            
+            #cont{<br>
+                /*Hace que salga pantalla completa*/<br>
+                max-width: 100%;<br>
+            }<br>
+            
+            header{<br>
+                background-color: rgba(255, 251, 0, 0.774);<br>
+            }<br>
+            
+            #titulo{<br>
+                padding-right: 8%;<br>
+            }<br>
+            
+            #ft_perfil{<br>
+                font-size: 400%;<br>
+                display: flex;<br>
+                justify-content: end;<br>
+                margin-right: 1%;<br>
+            }<br>
+            
+            .delete_subray{<br>
+                text-decoration: none;<br>
+                color: black;<br>
+            }<br>
+            
+            #tabla, thead, tbody{<br>
+                border-style: none; <br>
+                border-collapse:collapse;<br>
+                border-color: rgb(0, 0, 0);<br>
+            }<br>
+            
+        </p>
+</body>
+</html>
