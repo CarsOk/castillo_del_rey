@@ -1,0 +1,19 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    /*box-sizing: border-box;*/
+}
+
+#gradient_f {
+    background: linear-gradient(to right, rgb(255, 251, 0), rgba(245, 214, 73, 0.541));
+  }
+
+  #texto{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 72%;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+
+  }
