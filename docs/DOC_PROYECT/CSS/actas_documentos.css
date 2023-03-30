@@ -1,0 +1,13 @@
+.img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img > div {
+    text-align: center;
+}
+
+.img a {
+    text-decoration: none;
+}

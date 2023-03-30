@@ -16,8 +16,8 @@
 
     /*Hace que se separen un poco los container, entre columnas*/
     gap: 20px;
-    margin-top: 15%;
-    margin-bottom: 5%;
+    margin-top: 25%;
+    margin-bottom: 0%;
 }
 
 /*
@@ -28,7 +28,7 @@
 
 /*Para que cada carta se separe abajo*/
 #carta_1{
-    margin-bottom: 40%;
+    margin-bottom: 28%;
 
 }
 

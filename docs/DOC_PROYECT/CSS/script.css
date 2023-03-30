@@ -1,0 +1,19 @@
+.a {
+    /*Es lo que va atrás, lo blanco*/
+
+    height: 200px;
+    width: 240px;
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 5px;
+
+    /*Estos tres, hacen que aparezca lo de atrás, el diseño de atrás,
+            Si no está, igual se despliega, pero no se ve el diseño de afuera*/
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+
+    /*Aparece una transición al pasar, si no está, al pasar el mouse se abre mas rapido*/
+    transition: 400ms ease-in-out;
+    cursor: pointer;
+}
