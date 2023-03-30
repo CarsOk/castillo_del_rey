@@ -1,16 +1,12 @@
 *{
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 
 #cont{  
     /*Hace que salga pantalla completa*/
     max-width: 100%;
-}
-
-header{
-    background-color: rgba(255, 251, 0, 0.774);
 }
 
 #titulo{
@@ -21,3 +17,6 @@ header{
     
 }
 
+#gradient_h {
+    background: linear-gradient(to left, rgb(255, 251, 0), rgba(245, 214, 73, 0.541));
+}
