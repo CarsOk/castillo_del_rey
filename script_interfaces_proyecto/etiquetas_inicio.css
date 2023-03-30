@@ -1,0 +1,23 @@
+#cont{
+    display: contents;
+}
+
+header{
+    background-color: rgba(255, 251, 0, 0.774);
+}
+
+#titulo{
+    padding-right: 8%;
+}
+
+#ft_perfil{
+    font-size: 400%;
+    display: flex;
+    justify-content: end;
+    margin-right: 1%;
+}
+
+/*#btn_txt{
+    border: 1px solid black;
+    background-color: rgba(255, 251, 0, 0.918);
+}*/
