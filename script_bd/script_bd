@@ -46,9 +46,7 @@ alter table usuarios add foreign key(cod_grado) REFERENCES grados(cod_grado);
 
 create table ASOC_ASIG_GRADOS(
     cod_asig varchar(7) not null,
-    nom_asig varchar(20) not null,
     cod_grado integer not null,
-    nom_grado integer not null,
     FOREIGN KEY(cod_asig) REFERENCES asignaturas(cod_asig),
     FOREIGN KEY(cod_grado) REFERENCES grados(cod_grado)
 );
@@ -156,32 +154,11 @@ insert into grados
 VALUES(1, 1, "PRE JARDÍN", '2023-02-06', '2023-11-17'),
 (2, 2, "JARDÍN", '2023-02-06', '2023-11-17'),
 (3, 3, "TRANSICIÓN", '2023-02-06', '2023-11-17'),
-(4, 3, "PRIMERO", '2023-02-06', '2023-11-17');
+(4, 3, "PRIMERO", '2023-02-06', '2023-11-17');}
 
-//Alumnos
-insert into usuarios (rol,tipo_documento, num_documento, usuario, contrasena, nombre1, nombre2, apellido1, apellido2, edad, sexo, lugar_nacimiento, fecha_nacimiento, telefono, direccion, eps, cod_grado)
-VALUES("ESTUDIANTE","TI",1043144567,"ab1@gmail.com","ab1", "LAURA","PATRICIA","PATIÑO","MORA",6,"F","SOLEDAD",'2017-01-26',3154988751,"CALLE 15 #21-44B", "SALUD TOTAL", 4),
-
-("ESTUDIANTE","REGISTRO CIVIL",19934553312,"aC1@gmail.com","aC1", "FERNANDO","ENRRIQUE","ROSADO","FERRER",3,"M","SOLEDAD",'2020-03-21',3009872312,"CALLE 20 #22-43C", "SALUD TOTAL", 1),
-
-("ESTUDIANTE","REGISTRO CIVIL",1934897234,"aD1@gmail.com","aD1", "EMILY","","QUINTERO","LOPEZ",4,"F","SABANALARGA",'2018-12-21',3156772345,"DIAG 27C #6A-4", "SANITAS", 2),
-
-("ESTUDIANTE","REGISTRO CIVIL",1045233776,"aE2@gmail.com","aE2", "LIPSY","","MONTERO","VIÑA",5,"F","BARRANQUILLA",'2018-11-01',3218764321,"KRA 1C #45A-4", "MUTUALSER", 3);
-
-//Acudientes
-insert into acudientes (tipo_documento, num_documento, nombre1, nombre2, apellido1, apellido2, telefono, parentesco, usuario_alumno)
-VALUES("CC", 32789675, "MARIA", "CONCEPCIÓN", "MORA", "PEREZ", 3154988751, "MADRE", 5),
-("CC", 32895234, "LIDYA", "", "FERRER", "FERRER", 3009872312
-, "MADRE", 6),
-("CC", 72982312, "PEDRO", "LUIS", "QUINTERO", "MONTAÑO", 3156772345
-, "PADRE", 7),
-("CC", 32457654, "LIPSY", "", "MONTERO", "VENERA", 3218764321
-, "MADRE", 8);
-
-//Asignaturas_Alumnos
-//Estan mal
-insert into asignaturas_alumnos 
-VALUES("ART", 5),
+//Asignaturas_alumnos
+insert into asignaturas_alumnos (cod_asig, usuario_alumno)
+VALUES("ART",5),
 ("CI_NA",5),
 ("COM_LEC",5),
 ("ED_CRI",5),
@@ -201,7 +178,7 @@ VALUES("ART", 5),
 ("INT",6),
 ("MAT",6),
 
-("ART", 7),
+("ART",7),
 ("COM_LEC",7),
 ("ED_CRI",7),
 ("ED_FI",7),
@@ -218,3 +195,83 @@ VALUES("ART", 5),
 ("ING",8),
 ("INT",8),
 ("MAT",8);
+
+//Asociacion asignaturas a grados
+insert into asoc_asig_grados VALUES
+("ART", 1),
+("COM_LEC",1),
+("ED_CRI",1),
+("ED_FI",1),
+("ESP",1),
+("ING",1),
+("INT",1),
+("MAT",1),
+
+("ART", 2),
+("COM_LEC",2),
+("ED_CRI",2),
+("ED_FI",2),
+("ESP",2),
+("ING",2),
+("INT",2),
+("MAT",2),
+
+("ART", 3),
+("COM_LEC",3),
+("ED_CRI",3),
+("ED_FI",3),
+("ESP",3),
+("ING",3),
+("INT",3),
+("MAT",3),
+
+("ART",4),
+("CI_NA",4),
+("COM_LEC",4),
+("ED_CRI",4),
+("ED_FI",4),
+("ESP",4),
+("INF",4),
+("ING",4),
+("MAT",4),
+("SOC",4);
+
+//Asociacion docente asignatura
+insert into asoc_docente_asig VALUES
+("ART", 1),
+("COM_LEC",1),
+("ED_CRI",1),
+("ED_FI",1),
+("ESP",1),
+("ING",1),
+("INT",1),
+("MAT",1),
+
+("ART",2),
+("COM_LEC",2),
+("ED_CRI",2),
+("ED_FI",2),
+("ESP",2),
+("ING",2),
+("INT",2),
+("MAT",2),
+
+("ART",3),
+("COM_LEC",3),
+("ED_CRI",3),
+("ED_FI",3),
+("ESP",3),
+("ING",3),
+("INT",3),
+("MAT",3),
+
+("ART",4),
+("CI_NA",4),
+("COM_LEC",4),
+("ED_CRI",4),
+("ED_FI",4),
+("ESP",4),
+("INF",4),
+("ING",4),
+("MAT",4),
+("SOC",4);
