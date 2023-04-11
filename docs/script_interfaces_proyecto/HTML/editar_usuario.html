@@ -33,154 +33,150 @@
             </nav>
 
             <nav class="row">
-                <h5><strong>Editar Usuario</strong></h5>
+                <h5><strong>Nuevo Usuario</strong></h5>
             </nav>
 
             <br>
 
             <div class="row">
-                <form>
-                    <div class="row">
-                        <div class="col">
-                            <p><strong>Rol</strong></p>  
-                            <p><select id="Tipo" class="form-control" required>
-                                <option value="sel" selected></option>
-                                <option value="DOCENTE">DOCENTE</option>
-                                <option value="ESTUDIANTE">ESTUDIANTE</option>
-                            </select></p>
+                <div class="col-12">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <p><strong>Rol</strong></p>  
+                                <p><select id="Tipo" class="form-control" required>
+                                    <option value="sel" selected></option>
+                                    <option value="DOCENTE">DOCENTE</option>
+                                    <option value="ESTUDIANTE">ESTUDIANTE</option>
+                                </select></p>
 
-                            <p><strong>Apellido 2</strong></p>  
-                            <p><input type="text" class="form-control"  name="apell_2" required></p>
+                                <p><strong>Nombre 2</strong></p>
+                                <p><input type="text" class="form-control" name="name2"></p>
+
+                                <p><strong>Fecha de Nacimiento</strong></p>
+                                <p><input type="date" class="form-control" name="fecha_nac" required></p>
+                            </div>
+
+                            <div class="col">
+                                <p><strong>Tipo de documento</strong></p>  
+                                <p><select id="Tipo_Doc" class="form-control" required>
+                                    <option value="sel" selected></option>
+                                    <option value="CC">CC</option>
+                                    <option value="CE">CE</option>
+                                    <option value="TI">TI</oprion>
+                                    <option value="RC">RC</option>
+                                </select></p>
+
+                                <p><strong>Apellido 1</strong></p>
+                                <p><input type="text" class="form-control" name="apell2" required></p>
+
+                                <p><strong>Teléfono</strong></p>
+                                <p><input type="number" class="form-control" name="tel" min="1"></p>
+                            </div>
+
+                            <div id="num_doc" class="col">
+                                <p><strong> N&uacute;mero de documento</strong></p>
+                                <p><input type="number" class="form-control" name="num_doc" required></p>
+
+                                <p><strong>Apellido 2</strong></p>  
+                                <p><input type="text" class="form-control" name="apell_2" required></p>
+
+                                <p><strong>Dirección</strong></p>
+                                <p><input type="text" class="form-control" name="direc" required></p>
+
+                                
+                            </div>
+
+                            <div class="col">
+                                <p><strong>Usuario</strong></p>
+                                <p><input type="text" class="form-control" name="usuario" required></p>
+
+                                <p><strong>Edad</strong></p>
+                                <p><input type="number" class="form-control" min="1" name="edad" required></p>
+
+                                <p><strong>EPS</strong></p>
+                                <p><input type="text" class="form-control" name="eps"></p>
+                            </div>
+
+                            <div class="col">
+                                <p><strong>Contraseña</strong></p> 
+                                <p><input type="password" class="form-control" name="password" required></p>
+
+                                <p><strong>Sexo</strong></p>
+                                <p><select id="sexo" class="form-control" required>
+                                    <option value="sel" selected></option>
+                                    <option value="M">M</option>
+                                    <option value="F">F</option>
+                                </select></p>
+
+                                <p><strong>Correo</strong></p>
+                                <p><input type="email" class="form-control" name="correo"></p>
+                            </div>
+
+                            <div class="col">
+                                <p><strong>Nombre 1</strong></p>
+                                <p><input type="text" class="form-control" name="name1" required></p>
+                                
+                                <p><strong>Lugar de Nacimiento</strong></p>
+                                <p><input type="text" class="form-control" name="lugar_nac" required></p>
+
+                                <p><strong>Formación Académica</strong></p>
+                                <p><textarea class="form-control" name="area" rows="1"></textarea></p>
+                            </div>
+
                         </div>
-
-                        <div class="col">
-                            <p><strong>Tipo de documento</strong></p>  
-                            <p><select id="Tipo_Doc" class="form-control" required>
-                                <option value="sel" selected></option>
-                                <option value="CC">CC</option>
-                                <option value="CE">CE</option>
-                                <option value="TI">TI</oprion>
-                                <option value="RC">RC</option>
-                            </select></p>
-
-                            <p><strong>Edad</strong></p>
-                            <p><input type="number" class="form-control" min="1" name="edad" required></p>
-                        </div>
-
-                        <div id="num_doc" class="col">
-                            <p><strong> N&uacute;mero de documento</strong></p>
-                            <p><input type="number" class="form-control" name="num_doc" min="1" required></p>
-
-                            <p><strong>Sexo</strong></p>
-                            <p><select id="sexo" class="form-control" required>
-                                <option value="sel" selected></option>
-                                <option value="M">M</option>
-                                <option value="F">F</option>
-                            </select></p>
-                        </div>
-
-                        <div class="col">
-                            <p><strong>Nombre 1</strong></p>
-                            <p><input type="text" class="form-control" name="name1" required></p>
-
-                            <p><strong>Lugar de Nacimiento</strong></p>
-                            <p><input type="text" class="form-control" name="lugar_nac" required></p>
-                        </div>
-
-                        <div class="col">
-                            <p><strong>Nombre 2</strong></p>
-                            <p><input type="text" class="form-control" name="name2"></p>
-
-                            <p><strong>Fecha de Nacimiento</strong></p>
-                            <p><input type="date" class="form-control" name="fecha_nac" required></p>
-                        </div>
-
-                        <div class="col">
-                            <p><strong>Apellido 1</strong></p>
-                            <p><input type="text" class="form-control" name="apell2" required></p>
-
-                            <p><strong>Teléfono</strong></p>
-                            <p><input type="number" class="form-control" name="tel" min="1"></p>
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-                        <div class="col-3">
-                            <p><strong>Dirección</strong></p>
-                            <p><input type="text" class="form-control" name="direc" required></p>
-                        </div>
-
-                        <div class="col-3">
-                            <p><strong>EPS</strong></p>
-                            <p><input type="text" class="form-control" name="eps"></p>
-                        </div>
-
-                        <div class="col-3">
-                            <p><strong>Correo</strong></p>
-                            <p><input type="email" class="form-control" name="correo"></p>
-                        </div>
-
-                        <div class="col-3">
-                            <p><strong>Formación Académica</strong></p>
-                            <p><textarea class="form-control" name="area" rows="1"></textarea></p>
-                        </div>
-                    </div>
 
                         <br>
 
-                    <div class="row">
-                        <p><strong>Información del Acudiente</strong></p>
-                    </div>
-
-                    <div class="row">
-                        <div class="col">
-                            <p><strong>Tipo de documento</strong></p>  
-                            <p><select id="Tipo_Doc" class="form-control">
-                                <option value="sel" selected></option>
-                                <option value="CC">CC</option>
-                                <option value="CE">CE</option>
-                            </select></p>
-
-                            <p><strong>Apellido 1</strong></p>  
-                            <p><input type="text" class="form-control" name="apell_1"></p>
+                        <div class="row">
+                            <p><strong>Información del Acudiente</strong></p>
                         </div>
 
-                        <div class="col">
-                            <p><strong> N&uacute;mero de documento</strong></p>
-                            <p><input type="number" class="form-control" name="num_doc" min="1"></p>
+                        <div class="row">
+                            <div class="col">
+                                <p><strong>Tipo de documento</strong></p>  
+                                <p><select id="Tipo_Doc" class="form-control">
+                                    <option value="sel_doc" selected></option>
+                                    <option value="CC">CC</option>
+                                    <option value="CE">CE</option>
+                                </select></p>
 
-                            <p><strong>Apellido 2</strong></p>  
-                            <p><input type="text" class="form-control" name="apell_2"></p>
-                        </div>
+                                <p><strong>Apellido 1</strong></p>  
+                                <p><input type="text" class="form-control" name="apell_1"></p>
+                            </div>
 
-                        <div class="col">
-                            <p><strong>Nombre 1</strong></p>
-                            <p><input type="text" class="form-control" name="name1"></p>
+                            <div class="col">
+                                <p><strong> N&uacute;mero de documento</strong></p>
+                                <p><input type="number" class="form-control" name="num_doc"></p>
 
-                            <p><strong>Teléfono</strong></p>
-                            <p><input type="number" class="form-control" name="tel" min="1"></p>
-                        </div>
+                                <p><strong>Apellido 2</strong></p>  
+                                <p><input type="text" class="form-control" name="apell_2"></p>
+                            </div>
 
-                        <div class="col">
-                            <p><strong>Nombre 2</strong></p>
-                            <p><input type="text" class="form-control" name="name2"></p>
+                            <div class="col">
+                                <p><strong>Nombre 1</strong></p>
+                                <p><input type="text" class="form-control" name="name1"></p>
 
-                            <p><strong>Parentesco</strong></p>
-                            <p><input type="text" class="form-control" name="parentesco"></p>
+                                <p><strong>Teléfono</strong></p>
+                                <p><input type="number" class="form-control" name="tel" min="1"></p>
+                            </div>
+
+                            <div class="col">
+                                <p><strong>Nombre 2</strong></p>
+                                <p><input type="text" class="form-control" name="name2"></p>
+
+                                <p><strong>Parentesco</strong></p>
+                                <p><input type="text" class="form-control" name="parentesco"></p>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <footer  class="row mt-2">
-                        <div class="col">
-                            <button type="submit" class="btn" name="accion" value="nuevo" id="btn_txt">GUARDAR</button>
-                        </div>
-                        <div id="caneca" class="col-1">
-                            <span class="icon icon-bin2"></span>
-                        </div>
-                    </footer>    
-                </form>
-                
+                        
+                        <footer class="row bg-light mt-2">
+                            <div class="col text-center">
+                                <button type="submit" class="btn" name="accion" value="nuevo" id="btn_txt">GUARDAR</button>
+                            </div>
+                        </footer>    
+                    </form>
+                </div>
             </div>
 
         </div>
