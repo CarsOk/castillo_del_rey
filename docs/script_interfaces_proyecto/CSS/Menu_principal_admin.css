@@ -5,22 +5,26 @@
 }
 
 #cont{
-    /*display: flex, hace que no salga el scroll, y el max-width, hace que aparezca todo completo en la pantalla*/
-    display: flex;
-    align-items: center;
-    justify-content: center;    
     /*Hace que salga pantalla completa*/
     max-width: 100%;
+
+    /* Se supone que es para que no salga el scroll, pero sin esto tampoco sale
     height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    */
 }
 
-header{
-    background-color: rgba(255, 251, 0, 0.774);    
+#gradient_h {
+    background: linear-gradient(to left, rgb(255, 251, 0), rgba(245, 214, 73, 0.541));
 }
 
 #titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 900;
     padding-right: 8%;
-    
 }
 
 #ft_perfil{
