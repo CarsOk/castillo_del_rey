@@ -9,11 +9,15 @@
     max-width: 100%;
 }
 
-header{
-    background-color: rgba(255, 251, 0, 0.774);
+
+#gradient_h {
+    background: linear-gradient(to left, rgb(255, 251, 0), rgba(245, 214, 73, 0.541));
 }
 
 #titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 900;
     padding-right: 8%;
 }
 
