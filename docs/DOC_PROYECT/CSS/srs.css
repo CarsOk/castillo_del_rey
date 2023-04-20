@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-main{
-    margin: 1%;
-    border: 1px solid black;
-}
-
 #titulo{
     font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
