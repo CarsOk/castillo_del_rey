@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <div id="cont" class="container text-center rounded-5">
+        <!--<div id="cont" class="container text-center rounded-5">
             <header class="row rounded-top-5">
                 <br>
             </header>
@@ -39,7 +39,39 @@
                     </form>
                 </section>
             </main>
-        </div>
+        </div>-->
+
+        <!--<main id="cont">-->
+            <div id="cont" class="row">   
+                    <nav class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
+                        <div id="desc" class="row text-center">
+                            <label>Institución Educativa <br> Castillo del Rey</label>
+
+                            <div class="col-3"></div>
+                            <img src="/docs/script_interfaces_proyecto/IMGENES/CR_LOGO.png" id="logo" alt="Logo de la institución">
+                        </div>  
+                    </nav>
+                
+                    <section class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center">
+                        <form action="/proyectoADSI/CtrValidar" method="post">
+                            <div class="row">
+                                <div id="wel" class="row">
+                                    <label>BIENVENIDO</label>
+                                </div>
+
+                                <p><input type="text" name="txtuser" class="form-control"  required placeholder="Usuario"></p>
+                                <p><input type="password" name="txtpass" class="form-control" required placeholder="Contrase&ntilde;a"></p>
+                            </div>
+
+                            <div class="text-center mb-3" class="col-lg col-md-4 col-sm-6 col-xs-12">
+                                <input type="submit" name="accion" class="btn btn-outline-dark"  value="INICIAR SESIÓN">
+                                <p style="color: red;"></%=Mensaje%></p><!--El = es como sout, es para imprimir en pantalla-->
+                            </div>
+                        </form>
+                    </section>
+                    
+            </div>
+        <!--</main>-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <script src="../Js/Login.js"></script>
     </body>
