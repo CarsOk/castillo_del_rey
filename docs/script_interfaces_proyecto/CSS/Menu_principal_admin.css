@@ -8,16 +8,16 @@
     /*Hace que salga pantalla completa*/
     max-width: 100%;
 
-    /* Se supone que es para que no salga el scroll, pero sin esto tampoco sale
+    /* Se supone que es para que no salga el scroll, pero sin esto tampoco sale*/
     height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;   
-    */
+    
 }
 
-#gradient_h {
-    background: linear-gradient(to left, rgb(255, 251, 0), rgba(245, 214, 73, 0.541));
+header{
+    background:linear-gradient(rgb(255, 255, 255), gold);
 }
 
 #titulo{
@@ -79,6 +79,22 @@
     border-color: rgb(0, 0, 0);
 }
 
+footer{
+    background:linear-gradient(gold, rgb(255, 255, 255));
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#texto{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 50%;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+    font-weight: 500;
+}
 /*
 table{
     border-style: solid; 
