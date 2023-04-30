@@ -95,6 +95,15 @@ footer{
     padding-top: 0.5%;
     font-weight: 500;
 }
+
+#wel{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1000%;
+    color: black;
+}
+
 /*
 table{
     border-style: solid; 
