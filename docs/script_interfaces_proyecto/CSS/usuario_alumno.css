@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#cont{
+    /*Hace que salga pantalla completa*/
+    max-width: 100%;
+}
+
+header{
+    background:linear-gradient(rgb(255, 255, 255), gold);
+}
+
+
+#titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 900;
+    padding-right: 8%;
+}
+
+#ft_perfil{
+    font-size: 400%;
+    display: flex;
+    justify-content: end;
+    margin-right: 1%;
+}
+
+#caja_txt{
+    margin-left: 10%;
+}
+
+
+.delete_subray{
+    text-decoration: none;
+    color: black;
+    font-size: 188%;
+}
