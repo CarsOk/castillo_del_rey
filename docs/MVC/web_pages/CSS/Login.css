@@ -1,0 +1,57 @@
+/* 
+    Created on : 13-abr-2023, 13:01:47
+    Author     : Acer
+*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#cont{
+    /*Hace que todo el container ocuper el 100% de la pantalla*/
+    min-height: 100vh;
+    background: linear-gradient(to left, rgba(94, 94, 89, 0.342), rgba(201, 196, 181, 0));
+
+    
+    /*display: flex, hace que no salga el scroll, y el max-width, hace que aparezca todo completo en la pantalla*/
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+     
+    /*Hace que salga pantalla completa*/
+    max-width: 100%;
+    height: fit-content;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#desc{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 130%;
+}
+
+#logo{
+    width: 50%;
+    height: 50%;    
+
+}
+
+section{
+    padding-top: 5%;
+}
+
+
+#wel{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 250%;
+    margin-bottom: 2%;
+    font-weight: 900;
+}
