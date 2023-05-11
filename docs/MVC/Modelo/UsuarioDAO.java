@@ -1,9 +1,10 @@
-package docs.MVC.Modelo;
+package Modelo;
 
-import docs.MVC.Clases.Conectar;
+import Clases.Conectar;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +14,7 @@ public class UsuarioDAO {
     Conectar cone;//Esta es la clase
     ResultSet rs; //ResultSet proporciona varios métodos para obtener los datos de columna correspondientes a un fila
     Usuario usua;
+    Statement stm;
     
     public Usuario Validar(String usu, String pass){
         usua = new Usuario();//Estoy creando un objeto del modelo usuario
@@ -62,7 +64,7 @@ public class UsuarioDAO {
         return usua;
     }
     
-    public List listar(){
+    public List listarAlumnos(){
         ArrayList<Usuario> list = new ArrayList<>();
         try {
             cone = new Conectar();
@@ -70,13 +72,13 @@ public class UsuarioDAO {
             if( con != null){
                 System.out.println("Se establecio conexión con la BD");
             }
-            pstm = con.prepareStatement("select * from usuarios");
+            pstm = con.prepareStatement("SELECT * FROM usuarios WHERE rol = \"Estudiante\" ");
             rs = pstm.executeQuery();
             while(rs.next()){
                 usua = new Usuario();
                 //Se comienza a guardar la información
                 /*usua es la clase Usuario que cree en modelo, tiene set y get,
-                por medio del set estoy asignando al id, lo que tiene el idUsu, que hace referencia al (1), igual con el resto*/
+                por medio del set estoy asignando al codigo, lo que tiene el codigo en la bd, que hace referencia al (1), igual con el resto*/
                 usua.setCodigo(rs.getInt(1));
                 usua.setRol(rs.getString(2));
                 usua.setTipo_documento(rs.getString(3));
@@ -105,4 +107,50 @@ public class UsuarioDAO {
         }
         return list;
     }
+    
+    public List listarDocentes(){
+        ArrayList<Usuario> list = new ArrayList<>();
+        try {
+            cone = new Conectar();
+            con = cone.crearConexion();
+            if(con != null){//Se pregunta si se hizo la conexión
+                System.out.println("Se establecio una conexión con la BD");
+            }
+            pstm = con.prepareStatement("SELECT * FROM usuarios WHERE rol = \"Docente\"");//Nos muestra todos los usuarios que estan en la tabla usuario
+            rs = pstm.executeQuery();
+            
+            while(rs.next()){
+                usua = new Usuario();
+                //Se comienza a guardar la información
+                /*usua es la clase Usuario que cree en modelo, tiene set y get,
+                por medio del set estoy asignando al codigo, lo que tiene el codigo en la bd, que hace referencia al (1), (porque codigo esta en la posicion 1), igual con el resto*/
+                usua.setCodigo(rs.getInt(1));
+                usua.setRol(rs.getString(2));
+                usua.setTipo_documento(rs.getString(3));
+                usua.setNum_documento(rs.getInt(4));
+                usua.setUsuario(rs.getString(5));
+                usua.setContrasena(rs.getString(6));
+                usua.setNombre1(rs.getString(7));
+                usua.setNombre2(rs.getString(8));
+                usua.setApellido1(rs.getString(9));
+                usua.setApellido2(rs.getString(10));
+                usua.setEdad(rs.getInt(11));
+                usua.setSexo(rs.getString(12));
+                usua.setLugar_nacimiento(rs.getString(13));
+                usua.setFecha_nacimiento(rs.getString(14));
+                usua.setTelefono(rs.getInt(15));
+                usua.setDireccion(rs.getString(16));
+                usua.setEps(rs.getString(17));
+                usua.setCorreo(rs.getString(18));
+                usua.setForm_academica(rs.getString(19));
+                usua.setCod_grado(rs.getInt(20));
+                list.add(usua);
+                
+            }
+        } catch (Exception e) {
+            System.out.println("Error al conectarse con la BD "+e);
+        }
+        return list;
+    }
+    
 }
