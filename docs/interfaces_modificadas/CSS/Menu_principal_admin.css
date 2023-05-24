@@ -1,0 +1,81 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#cont{
+    /*Hace que salga pantalla completa*/
+    max-width: 100%;
+
+    /* Se supone que es para que no salga el scroll, pero sin esto tampoco sale*/
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    
+    /*background: linear-gradient(to left, rgba(94, 94, 89, 0.342), rgba(201, 196, 181, 0));*/
+    
+}
+
+#todo{
+    /*Hace que ocupe todo el height*/
+    min-height: 100vh;
+}
+
+header{
+    /*background-color: rgba(199, 199, 199, 0.726);*/
+    background:linear-gradient(rgb(216, 216, 216), rgb(255, 255, 255));
+    background:linear-gradient(rgb(255, 255, 255), rgb(216, 216, 216));
+}
+
+#titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 900;
+}
+
+#ft_perfil{
+    font-size: 200%;
+    /*display: flex;*/
+    justify-content: end;
+    padding: 0%;
+}
+
+
+.delete_subray{
+    text-decoration: none;
+    color: black;
+}
+
+
+#wel{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1000%;
+    color: black;
+}
+
+/*
+footer{
+    background:linear-gradient(gold, rgb(255, 255, 255));
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+*/
+
+/*
+table{
+    border-style: solid; 
+    border-collapse:collapse;
+    border-color: rgb(0, 0, 0);
+    
+}
+El td y th, es diciendole que le va a colocar borde al td y th, si solo tuviera el td, en donde está
+el th no apareciera borde.
+El border-style: Es para decirle como quiero el borde, sea solid, inset, none, etc.
+Y el border-collapse:collapse, es para que no aparezcan las celdas como tal (una celda, otra celda, etc), 
+si no que aparezca una sola linea, como tabla  */
+
