@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios Alumnos</title>
+    <link href="../CSS/usuario_alumno.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../IMG/CR_LOGO_ico.ico">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div id="cont" class="container text-center">
+        <header class="row">
+            <article id="logo" class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mt-3">
+                <img src="../IMG/CR_LOGO.png" width="30%" height="90%" alt="Logo de la institución">
+            </article>
+
+            <article id="titulo" class="col-lg col-md-4 col-sm-6 col-xs-12 mt-3">
+                <h2><strong>Institución Educativa Castillo del rey</strong></h2>
+            </article>
+
+            <article id="ft_perfil" class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mt-3">
+                <i class="bi bi-person-fill"></i>
+            </article>
+        </header>
+
+        <nav class="row mt-5">
+            <div class="col-1"></div>
+            <div class="col-lg-4">
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" placeholder="Buscar" class="form-control" id="caja_txt">
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <button type="submit" value="buscar" class="btn btn-outline-warning" id="btn_txt">Buscar <i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="col-lg-5"></div>
+
+            <div class="col">
+                <div class="col">
+                    <abbr title="Crear Usuario"><a class="btn btn-light" id="delete_subray"  href="../HTML/crear_usuario_alumno.html" target=""><i class="bi bi-person-fill-add"></i></a></abbr>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </nav>
+
+        <section class="row mt-5">
+            <div class="col-1"></div>
+            <div class="col">
+                <label id="titulo">ESTUDIANTES</label>
+                <table id="tabla" class="table mt-3">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col-2">Número de documento</th>
+                            <th scope="col-2">Nombres</th>
+                            <th scope="col-2">Apellidos</th>
+                            <th scope="col">Grado</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <abbr title="Editar usuario"><a href="../HTML/editar_usuario_alumno.html" target="" class="btn btn-outline-warning"><i class="bi bi-pencil-fill"></i></a></abbr>
+                                <abbr title="Eliminar usuario"><a href="#" target="" class="btn btn-outline-danger"><i class="bi bi-trash3"></i></a></abbr>
+                                <abbr title="Pagos"><a href="../HTML/pago_mensualidad.html" target="" class="btn btn-outline-info"><i class="bi bi-coin"></i></a></abbr>
+                                <abbr title="Informe de asistencia"><a href="../HTML/informe_asistencia_admin.html" target="" class="btn btn-outline-dark"><i class="bi bi-calendar-check"></i></a></abbr>
+                                <abbr title="Informe de notas"><a href="../HTML/informe_notas_admin.html" target="" class="btn btn-outline-secondary"><i class="bi bi-journal-plus"></i></a></abbr>
+                                <abbr title="Asociación alumno a grado"><a href="../HTML/asoc_alumnos_grados.html" target="" class="btn btn-outline-success"><i class="bi bi-arrow-left-right"></i></a></abbr>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-1"></div>
+        </section>
+
+        <!--<footer>
+            <div class="col-lg-12 col-md-4 col-sm-6 col-xs-12">
+                <label id="texto" class="text-center">
+                    Convenio <br>
+                    Centro Educativo Integral Nueva Esperanza <br>
+                    C.E.I.N.E <br>
+                    Licencia de Funcionamiento 0707 del 23/11/2006 <br>
+                    Código DANE: 0000000000000
+                </label>
+            </div>
+        </footer>-->
+    </div>
+</body>
+</html>

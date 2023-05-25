@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#cont{
+    /*Hace que salga pantalla completa*/
+    max-width: 100%;
+    /*Hace que ocupe todo el height*/
+    min-height: 100vh;
+}
+header{
+    background:linear-gradient(rgb(255, 255, 255), rgb(216, 216, 216));
+}
+
+#titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 900;
+}
+
+#ft_perfil{
+    font-size: 200%;
+    /*display: flex;*/
+    justify-content: end;
+    padding: 0%;
+    padding-left: 8%;
+}
+
