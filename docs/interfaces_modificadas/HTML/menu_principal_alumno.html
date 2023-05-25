@@ -1,62 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>MENÚ PRINCIPAL ALUMNO</title>
+        <title>Menú principal Alumno</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../CSS/menu_principal_alumno.css" rel="stylesheet" type="text/css">       
-        <link rel="icon" href="../IMGENES/CR_LOGO_ico.ico">
+        <link rel="icon" href="../IMG/CR_LOGO_ico.ico">
         <link rel="stylesheet" type="text/css" href="../style.css">
-
+        <!--Icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     </head>
 
-    
-
     <body>
-
         <div id="cont" class="container text-center">
             <header class="row">
-                <br>
+                <article id="logo" class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mt-3">
+                    <img src="../IMG/CR_LOGO.png" width="30%" height="90%" alt="Logo de la institución">
+                </article>
+    
+                <article id="titulo" class="col-lg col-md-4 col-sm-6 col-xs-12 mt-3">
+                    <h2><strong>Institución Educativa Castillo del rey</strong></h2>
+                </article>
+    
+                <article id="ft_perfil" class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mt-3">
+                    <i class="bi bi-person-fill"></i>
+                </article>
             </header>
 
-            <nav class="row">
-                <article id="logo" class="col-3">
-                    <img src="../IMGENES/CR_LOGO.png" width="50%" height="90%" alt="Logo de la institución">
-                </article>
-
-                <article id="titulo" class="col-7 mt-2">
-                    <h2><strong>Institución Educativa <br> Castillo del rey</strong></h2>
-                </article>
-
-                <article id="ft_perfil" class="col mt-2">
-                    <span class="icon icon-user"></span>
-                </article>
-            </nav>
-
-            <div class="row">
-                <h5><strong>Informe de Notas</strong></h5>
-            </div>
-
-            <br>
-
-            <nav class="row">
-                <div class="col-1"></div>
-                <div class="col-10">
-                    <table id="tabla" class="table table-bordered border-black">
+            <nav class="row mt-5">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                    <table class="table table-bordered border-black">
                         <thead>
                             <tr>
-                                <th scope="col">CÓDIGO</th>
-                                <th scope="col">NOMBRE COMPLETO</th>
-                                <th scope="col">GRADO</th>
+                                <th scope="col">Nombre Completo</th>
+                                <th scope="col">Grado</th>
                             </tr>
                         </thead>
 
                         <tbody>
                             <tr>
-                                <th scope="row">0000</th>
-                                <td>Nombre completo</td>
-                                <td>GRADO</td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>
@@ -66,20 +52,20 @@
             <br>
 
                 <div class="row">
-                    <div class="col-3"></div>
-                            <div class="col-3">
+                    <div class="col-lg-3"></div>
+                            <div class="col-lg-3">
                         <form>
                                 <select id="per" class="form-control">
-                                    <option value="Sel" selected>Seleccione</option>
-                                    <option value="PR">PRIMERO</option>
-                                    <option value="SG">SEGUNDO</option>
-                                    <option value="TR">TERCERO</option>
-                                    <option value="CT"> CUARTO</option>
+                                    <option value="Sel" selected>Seleccione Periodo</option>
+                                    <option value="PR">Primero</option>
+                                    <option value="SG">Segundo</option>
+                                    <option value="TR">Tercero</option>
+                                    <option value="CT"> Cuarto</option>
                                 </select>
                             </div>
 
-                            <div class="col-3">
-                                <button type="submit" class="form-control" id="btn_txt">BUSCAR</button>
+                            <div class="col-lg-3">
+                                <button type="submit" class="btn btn-outline-warning" class="form-control">Buscar <i class="bi bi-search"></i></button>
                             </div>
                         </form>
                         
@@ -90,10 +76,10 @@
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col-10">
-                    <table id="tabla" class="table table-bordered border-black ">
+                    <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col">ASIGNATURAS</th>
+                                <th scope="col">Asignaturas</th>
                                 <th scope="col">NT1</th>
                                 <th scope="col">NT2</th>
                                 <th scope="col">NT2</th>
@@ -104,7 +90,7 @@
 
                         <tbody>
                             <tr>
-                                <td>ARTÍSTICA</td>
+                                <td>Artística</td>
                                 <td>5.0</td>
                                 <td>4.8</td>
                                 <td>4.0</td>
@@ -113,7 +99,7 @@
                             </tr>
 
                             <tr>
-                                <td>EDUCACIÓN CRISTIANA</td>
+                                <td>Educación Cristiana</td>
                                 <td></td>
                                 <td>4.0</td>
                                 <td>3.9</td>
@@ -122,7 +108,7 @@
                             </tr>
 
                             <tr>
-                                <td>EDUCACIÓN FÍSICA</td>
+                                <td>Educación Física</td>
                                 <td>5.0</td>
                                 <td>4.8</td>
                                 <td>4.6</td>
@@ -131,7 +117,7 @@
                             </tr>
                             
                             <tr>
-                                <td>LENGUAJE</td>
+                                <td>Lenguaje</td>
                                 <td>4.0</td>
                                 <td>4.9</td>
                                 <td>4.2</td>
@@ -140,14 +126,14 @@
                             </tr>
 
                             <tr>
-                                <td>INGLES</td>
+                                <td>Ingles</td>
                                 <td>5.0</td>
                                 <td>4.1</td>
                                 <td>4.0</td>
                                 <td>4.6</td>
                                 <td></td>
                             </tr>
-                        </tbody>
+                        </tbody>    
                     </table>
                 </div>
             </div>
